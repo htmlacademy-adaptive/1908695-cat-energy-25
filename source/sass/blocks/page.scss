@@ -1,0 +1,26 @@
+.page {
+  font-family: "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+.page {
+  color: rgba(68, 68, 68, 1);
+  background-color: #FFFFFF;
+}
+
+.page {
+  height: 100%;
+  .page__body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+  }
+}
+
+@media all  and (min-width: 768px) {
+  .page {
+    font-size: $font-size + 2;
+    line-height: $line-height +6;
+  }
+}

@@ -1,0 +1,20 @@
+.site-navigation {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.site-navigation {
+  color: rgba(0, 0, 0, 1);
+  list-style: none;
+}
+
+.site-navigation__link {
+  text-decoration: none;
+  color:inherit;
+}
+
+.site-navigation__item--active {
+  border-bottom: 2px solid rgba(104, 183, 56, 1);
+}

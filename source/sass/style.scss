@@ -1,5 +1,20 @@
-// Начните писать стили здесь
-body {
-  background-color:rgba(104, 183, 56, 0.5);
-;
-}
+@import "variables";
+@import "blocks/page";
+@import "blocks/main-header";
+@import "blocks/container";
+@import "blocks/logo-letters";
+@import "blocks/site-navigation";
+@import "blocks/main-index";
+@import "blocks/promo";
+@import "blocks/section-title";
+@import "blocks/service";
+@import "blocks/features";
+@import "blocks/illustration";
+@import "blocks/main-footer";
+@import "blocks/contacts";
+@import "blocks/map";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "global";
+@import "fonts";
+
