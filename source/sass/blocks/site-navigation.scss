@@ -3,6 +3,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  text-transform: uppercase;
 }
 
 .site-navigation {
@@ -12,9 +13,23 @@
 
 .site-navigation__link {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 .site-navigation__item--active {
   border-bottom: 2px solid rgba(104, 183, 56, 1);
+}
+
+@media all and (min-width: 768px) {
+  .site-navigation {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .site-navigation {
+    line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+  }
 }

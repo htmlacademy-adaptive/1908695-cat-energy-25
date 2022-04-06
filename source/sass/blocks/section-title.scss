@@ -4,16 +4,22 @@
   line-height: 36px;
   font-weight: 400;
 }
+
 .section-title--accent {
   font-size: 36px;
   line-height: 40px;
 }
-.section-title--basic {
-  color: rgba(0, 0, 0, 1);
-}
 
 .section-title--accent {
-  color:rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.section-title--basic {
+  line-height: 40px;
+}
+
+.section-title--basic {
+  color: rgba(0, 0, 0, 1);
 }
 
 .section-title--small {
@@ -26,6 +32,7 @@
     font-size: 60px;
     line-height: 60px;
   }
+
   .section-title--accent {
     color: rgba(0, 0, 0, 1);
   }

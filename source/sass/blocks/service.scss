@@ -24,3 +24,14 @@
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
 }
+
+@media all and (min-width: 768px) {
+  .service__list-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .service__list-description {
+    color: rgba(0, 0, 0, 1);
+  }
+}
