@@ -10,8 +10,7 @@
 
 .promo {
   position: relative;
-  background:
-              url("../../img/decorative-images/mobile/promo-background.png") no-repeat 50% 50%;
+  background: url("../../img/decorative-images/mobile/promo-background.png") no-repeat 50% 50%;
 }
 .promo::before {
   position: absolute;
@@ -21,10 +20,30 @@
   left: 0;
   right: 0;
   background:linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) ;
-
 }
+
+.promo__title {
+  position: relative;
+  z-index: 1;
+}
+
 .promo__description {
   text-transform: uppercase;
+}
+
+.promo__description {
+  position: relative;
+  z-index: 1;
+}
+
+.promo__image {
+  position: relative;
+  z-index: 1;
+}
+
+.promo__button {
+  position: relative;
+  z-index: 1;
 }
 
 @media all  and (min-width: 768px) {

@@ -1,0 +1,38 @@
+.fieldset {
+  margin: 0;
+  padding: 20px 0;
+}
+.fieldset-title {
+  line-height: 26px;
+}
+
+.fieldset__label,
+.fieldset__input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(68, 68, 68, 1);
+}
+
+.fieldset__label {
+  display: block;
+}
+
+.fieldset--style-one {
+  border: none;
+}
+
+.fieldset--style-two {
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  border-right: none;
+  border-left: none;
+}
+
+.fieldset__input {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.fieldset__input::placeholder {
+  color: rgba(68, 68, 68, 1);
+}

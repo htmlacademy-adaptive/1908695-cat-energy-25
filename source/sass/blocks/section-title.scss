@@ -4,17 +4,29 @@
   line-height: 36px;
   font-weight: 400;
 }
-
-.section-title {
-  color:rgba(255, 255, 255, 1);
-
+.section-title--accent {
+  font-size: 36px;
+  line-height: 40px;
 }
+.section-title--basic {
+  color: rgba(0, 0, 0, 1);
+}
+
+.section-title--accent {
+  color:rgba(255, 255, 255, 1);
+}
+
+.section-title--small {
+  font-size: 24px;
+  line-height: 24px;
+}
+
 @media all  and (min-width: 768px) {
   .section-title {
     font-size: 60px;
     line-height: 60px;
   }
-  .section-title {
+  .section-title--accent {
     color: rgba(0, 0, 0, 1);
   }
 }
