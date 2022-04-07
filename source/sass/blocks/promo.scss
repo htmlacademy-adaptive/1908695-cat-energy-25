@@ -1,0 +1,20 @@
+.promo {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $common-color;
+  background: url("../../img/decorative-images/mobile/promo-background.jpg") no-repeat 50% 50%;
+}
+
+.promo__description {
+  text-transform: uppercase;
+}
+
+@media all  and (min-width: 768px) {
+  .promo {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-font-color-three;
+  }
+}

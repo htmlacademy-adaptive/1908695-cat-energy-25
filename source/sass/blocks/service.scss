@@ -1,0 +1,33 @@
+.service__list {
+  @include reset-list;
+}
+
+.service__list-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: $common-color;
+}
+
+.service__list-item--summary {
+  margin-bottom: 0;
+}
+
+.service__list-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basic-font-color-three;
+}
+
+@media all and (min-width: 768px) {
+  .service__list-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .service__list-description {
+    color: rgba(0, 0, 0, 1);
+  }
+}

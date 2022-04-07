@@ -1,0 +1,45 @@
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $common-color;
+  background-color: $basic-color;
+  text-decoration: none;
+  border: none;
+}
+
+.button--primary {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 7px 20px;
+}
+
+.button--secondary {
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-font-color-three;
+  background-color: transparent;
+}
+
+.button--third {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 20px;
+}
+
+.button--accent-color {
+  color: rgba(68, 68, 68, 1);
+  background-color: $accent-color;
+}
+
+@media all and (min-width: 768px) {
+  .button--primary {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button--secondary {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

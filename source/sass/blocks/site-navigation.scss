@@ -1,0 +1,32 @@
+.site-navigation {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-font-color-three;
+  list-style: none;
+}
+
+.site-navigation__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-navigation__item--active {
+  border-bottom: 2px solid $basic-color;
+}
+
+@media all and (min-width: 768px) {
+  .site-navigation {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .site-navigation {
+    line-height: 30px;
+    color: $common-color;
+  }
+}
