@@ -2,15 +2,10 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(104, 183, 56, 1);
+  color: $common-color;
+  background-color: $basic-color;
   text-decoration: none;
   border: none;
-
-  &:disabled {
-    color: rgba(68, 68, 68, 1);
-    background-color: rgba(242, 242, 242, 1);
-  }
 }
 
 .button--primary {
@@ -22,7 +17,7 @@
 .button--secondary {
   font-size: 16px;
   line-height: 16px;
-  color: rgba(0, 0, 0, 1);
+  color: $basic-font-color-three;
   background-color: transparent;
 }
 
@@ -30,6 +25,11 @@
   font-size: 16px;
   line-height: 20px;
   padding: 10px 20px;
+}
+
+.button--accent-color {
+  color: rgba(68, 68, 68, 1);
+  background-color: $accent-color;
 }
 
 @media all and (min-width: 768px) {

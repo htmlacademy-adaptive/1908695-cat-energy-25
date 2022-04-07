@@ -3,7 +3,7 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: $common-color;
   background: url("../../img/decorative-images/mobile/promo-background.jpg") no-repeat 50% 50%;
 }
 
@@ -15,6 +15,6 @@
   .promo {
     font-size: 20px;
     line-height: 20px;
-    color: rgba(0, 0, 0, 1);
+    color: $basic-font-color-three;
   }
 }

@@ -8,12 +8,12 @@
 .section-title--accent {
   font-size: 36px;
   line-height: 40px;
-  color: rgba(255, 255, 255, 1);
+  color: $common-color;
 }
 
 .section-title--basic {
   line-height: 40px;
-  color: rgba(0, 0, 0, 1);
+  color: $basic-font-color-three;
 }
 
 .section-title--small {
@@ -28,6 +28,6 @@
   }
 
   .section-title--accent {
-    color: rgba(0, 0, 0, 1);
+    color: $basic-font-color-three;
   }
 }
