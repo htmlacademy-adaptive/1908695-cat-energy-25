@@ -1,0 +1,9 @@
+.main-header__container {
+  @include flex(space-between, nowrap);
+}
+
+@media all  and (min-width: $middle-size) {
+  .main-header__container {
+    //@include flex(flex-start, wrap);
+  }
+}
