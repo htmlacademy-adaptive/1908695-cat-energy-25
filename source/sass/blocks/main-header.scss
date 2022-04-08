@@ -1,9 +1,20 @@
 .main-header__container {
-  @include flex(space-between, nowrap);
+  @include flex(row, center, space-between, nowrap);
 }
 
 @media all  and (min-width: $middle-size) {
   .main-header__container {
-    //@include flex(flex-start, wrap);
+    @include flex(row, center, flex-start, wrap);
+    min-height: 100px;
+  }
+
+  .main-header__logo + .main-header__logo {
+    margin-right: 94px;
+  }
+}
+
+@media all and (min-width: $large-size) {
+  .main-header__logo + .main-header__logo {
+    margin-right: 540px;
   }
 }
