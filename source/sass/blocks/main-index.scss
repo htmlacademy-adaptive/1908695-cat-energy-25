@@ -6,3 +6,10 @@
 .main-index__features {
   margin-bottom: 50px;
 }
+
+@media all and (min-width: $middle-size) {
+  .main-index__features {
+    margin-bottom: 0;
+  }
+
+}

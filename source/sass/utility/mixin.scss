@@ -17,7 +17,7 @@
   flex-wrap: $flex-wrap;
 }
 
-@mixin inline-grid($size-one, $size-two, $column-gap, $align-items:center) {
+@mixin inline-grid($size-one, $size-two, $column-gap, $align-items) {
   display: inline-grid;
   grid-template-columns: $size-one $size-two;
   column-gap: $column-gap;

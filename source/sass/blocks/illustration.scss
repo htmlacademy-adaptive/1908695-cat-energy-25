@@ -1,10 +1,32 @@
 .illustration {
+  padding: 25px 0 40px 0;
   background-color: rgba(234, 234, 234, 1);
 }
 
+.illustration__title {
+  @include reset();
+  margin-bottom: 40px;
+}
+
+.illustration__data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.illustration__data-container {
+  @include flex(column, center, center, nowrap);
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+.illustration__data-container-modified {
+  grid-column: -1/1;
+  justify-self: center;
+  display: flex;
+}
 .illustration__data-description,
-.illustration__data-title--accent,
-.illustration__data-description--accent,
+.illustration__data-title-common,
+.illustration__data-description-common,
 .illustration__range-label {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -12,14 +34,20 @@
 }
 
 .illustration__data-description {
+  margin: 8px;
+  order: -1;
   font-size: 24px;
   line-height: 24px;
 }
 
-.illustration__data-title--accent,
-.illustration__data-description--accent {
+.illustration__data-title-common,
+.illustration__data-description-common {
   font-size: 14px;
   line-height: 20px;
+}
+
+.illustration__data-description-common {
+  margin: 0;
 }
 
 .illustration__data-title {
@@ -43,7 +71,8 @@
     line-height: 37px;
   }
 
-  .illustration__data-description--accent {
+  .illustration__data-title-common,
+  .illustration__data-description-common {
     font-size: 20px;
   }
 
