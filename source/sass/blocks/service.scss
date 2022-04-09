@@ -3,9 +3,10 @@
 }
 
 .service__list-item {
+  @include flex(column, center, center, nowrap);
   margin-bottom: 20px;
   padding: 20px;
-  background-color: $common-color;
+  background-color: $accent-color;
 }
 
 .service__list-item--summary {
@@ -13,6 +14,9 @@
 }
 
 .service__list-title {
+  position: relative;
+  align-self: flex-start;
+  padding-left: 70px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -21,13 +25,83 @@
   color: $basic-font-color-three;
 }
 
+.service__list-title::before {
+  position: absolute;
+  content: "";
+  top:0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $basic-color;
+  transform: translateY(-10%);
+}
+
+.service__button {
+  align-self: flex-start;
+}
 @media all and (min-width: 768px) {
+  .service__list-item {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 54px;
+    padding: 77px 25px 50px 52px;
+  }
+
+  .service__list-item::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    border-radius: 50%;
+    background-color:$basic-color;
+  }
+
   .service__list-title {
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
   }
 
+  .service__list-title::before {
+    display: none;
+  }
+
   .service__list-description {
     color: rgba(0, 0, 0, 1);
+  }
+}
+
+@media all and (min-width: $large-size) {
+  .service__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    margin-bottom: 70px;
+  }
+
+  .service__list-item {
+    @include flex(column, center, center, nowrap);
+    margin-bottom: 0;
+    padding: 45px;
+  }
+
+  .service__list-item::after {
+    display: none;
+  }
+
+  .service__list-title {
+    position: relative;
+    align-self: flex-start;
+    padding-left: 160px;
+  }
+
+  .service__list-title::before {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-30%);
   }
 }

@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin flex($flex-direction, $align-items, $justify-content, $flex-wrap) {
   display: flex;
   flex-direction: $flex-direction;
