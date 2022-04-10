@@ -3,7 +3,7 @@
 }
 
 .main-footer-bottom__container {
- @include flex(column, center, space-between, nowrap);
+  @include flex(column, center, space-between, nowrap);
 }
 
 @media all and (min-width: $middle-size) {
@@ -13,14 +13,14 @@
 }
 
 @media all and (min-width: $large-size) {
-  .main-footer{
+  .main-footer {
     display: grid;
     grid-template-columns: 1fr 565px 655px 1fr;
     grid-template-rows: 95px 200px 107px auto;
   }
 
   .main-footer-bottom__container {
-   grid-column: -1/1;
+    grid-column: -1/1;
     grid-row: 4/5;
   }
 

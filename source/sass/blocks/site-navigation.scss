@@ -6,7 +6,8 @@
   text-transform: uppercase;
   color: $basic-font-color-three;
   list-style: none;
-  @include reset-list()
+
+  @include reset-list();
 }
 
 .site-navigation__link {
@@ -19,6 +20,7 @@
 .site-navigation__item {
   border-bottom: 2px solid transparent;
 }
+
 .site-navigation__item--active {
   border-bottom: 2px solid $basic-color;
 }
@@ -28,6 +30,7 @@
     @include flex(row, center, space-between, wrap);
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
   }
 
   .site-navigation__item {
@@ -42,10 +45,14 @@
 @media all and (min-width: 1440px) {
   .site-navigation {
     line-height: 30px;
-    color: #640909;
+    color: $common-color;
   }
 
   .site-navigation__item {
     margin-right: 33px;
+  }
+
+  .site-navigation__item--active {
+    border-bottom: 2px solid $common-color;
   }
 }

@@ -15,6 +15,7 @@
   bottom: 0;
   width: 100%;
   background: url("../../img/decorative-images/mobile/promo-background.jpg") no-repeat 50% 50%;
+  background-size: auto;
   z-index: -1;
 }
 
@@ -29,7 +30,7 @@
 }
 
 .promo__description {
- text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .promo__button {
@@ -37,6 +38,7 @@
   align-self: stretch;
   text-align: center;
 }
+
 @media all  and (min-width: $middle-size) {
   .promo {
     font-size: 20px;
@@ -76,9 +78,46 @@
   }
 
   .promo__button {
-    grid-row:3/4;
+    grid-row: 3/4;
     grid-column: 2/3;
     align-self: start;
     max-width: 250px;
+  }
+}
+
+@media all and (min-width: $large-size) {
+  .promo__container {
+    grid-template-columns: 91px 1129px;
+    grid-template-rows: 110px repeat(3, auto);
+  }
+
+  .promo__title {
+    grid-row: 2/3;
+  }
+
+  .promo__description {
+    grid-row: 3/4;
+  }
+
+  .promo__image {
+    grid-row: 1/5;
+    grid-column: 1/-1;
+    justify-self: center;
+    z-index: 0;
+  }
+
+  .promo__button {
+    grid-row: 4/5;
+  }
+
+  .promo::before {
+    display: block;
+    top: -150px;
+    left: 355px;
+    width: 100%;
+    height: 696px;
+    background: url("../../img/decorative-images/desktop/promo-background.jpg") no-repeat 50% 50%;
+    background-size: auto;
+    z-index: -1;
   }
 }

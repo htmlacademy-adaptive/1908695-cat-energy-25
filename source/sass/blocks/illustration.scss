@@ -24,6 +24,7 @@
   justify-self: center;
   display: flex;
 }
+
 .illustration__data-description,
 .illustration__data-title-common,
 .illustration__data-description-common,
@@ -61,7 +62,6 @@
 }
 
 @media all and (min-width: $middle-size) {
-
   .illustration {
     background-color: $common-color;
   }
