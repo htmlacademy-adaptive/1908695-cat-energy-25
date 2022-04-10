@@ -11,7 +11,7 @@
 .button--primary {
   font-size: 14px;
   line-height: 18px;
-  padding: 7px 20px;
+  padding: 10px 20px;
 }
 
 .button--secondary {
@@ -34,6 +34,7 @@
 
 @media all and (min-width: 768px) {
   .button--primary {
+    padding: 14px 20px;
     font-size: 20px;
     line-height: 20px;
   }

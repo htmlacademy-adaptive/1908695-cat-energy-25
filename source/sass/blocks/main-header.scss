@@ -1,5 +1,7 @@
 .main-header__container {
   @include flex(row, center, space-between, nowrap);
+  margin-bottom: 30px;
+  min-height: 45px;
 }
 
 @media all  and (min-width: $middle-size) {
