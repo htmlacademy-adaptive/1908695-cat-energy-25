@@ -6,3 +6,13 @@
 .main-index__features {
   margin-bottom: 50px;
 }
+
+.main-index__promo {
+  position: relative;
+}
+
+@media all and (min-width: $middle-size) {
+  .main-index__features {
+    margin-bottom: 0;
+  }
+}

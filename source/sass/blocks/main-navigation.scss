@@ -1,0 +1,9 @@
+.main-navigation__list {
+  display: none;
+}
+
+@media all and (min-width: $middle-size) {
+  .main-navigation__toggle {
+    display: none;
+  }
+}

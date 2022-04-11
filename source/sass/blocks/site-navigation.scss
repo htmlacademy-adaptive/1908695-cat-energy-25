@@ -6,11 +6,19 @@
   text-transform: uppercase;
   color: $basic-font-color-three;
   list-style: none;
+
+  @include reset-list();
 }
 
 .site-navigation__link {
+  display: inline-block;
+  padding: 10px 0;
   text-decoration: none;
   color: inherit;
+}
+
+.site-navigation__item {
+  border-bottom: 2px solid transparent;
 }
 
 .site-navigation__item--active {
@@ -19,8 +27,18 @@
 
 @media all and (min-width: 768px) {
   .site-navigation {
+    @include flex(row, center, space-between, wrap);
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
+  }
+
+  .site-navigation__item {
+    margin-right: 30px;
+  }
+
+  .site-navigation__item--summary {
+    margin-right: 0;
   }
 }
 
@@ -28,5 +46,13 @@
   .site-navigation {
     line-height: 30px;
     color: $common-color;
+  }
+
+  .site-navigation__item {
+    margin-right: 33px;
+  }
+
+  .site-navigation__item--active {
+    border-bottom: 2px solid $common-color;
   }
 }

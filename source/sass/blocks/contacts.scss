@@ -1,6 +1,12 @@
 .contacts {
-  padding: 26px 20px;
   background-color: $common-color;
+}
+
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 26px 20px;
 }
 
 .contacts__description {
@@ -10,16 +16,48 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-font-color-three;
+
+  @include reset();
 }
 
 .contacts__address {
+  @include reset();
   line-height: 20px;
   font-style: normal;
 }
 
 @media all and (min-width: 768px) {
-  .contacts__description {
+  .contacts__container {
+    grid-template-columns: min-content 1fr;
+    min-height: 200px;
+    padding: 50px 70px;
     font-size: 20px;
     line-height: 26px;
+    background-color: $accent-color;
+  }
+
+  .contacts__description {
+    justify-self: start;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    justify-self: self-end;
+
+    @include flex(column, flex-end, space-between, nowrap);
+  }
+}
+
+@media all  and (min-width: $large-size) {
+  .contacts__container {
+    background-color: $common-color;
+  }
+
+  .contacts__address {
+    justify-self: self-end;
+
+    @include flex(column, flex-start, space-between, nowrap);
   }
 }

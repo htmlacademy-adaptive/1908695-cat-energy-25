@@ -11,11 +11,13 @@
 <body class="page__body">
 
 <header class="page__main-header main-header">
-  <div class="container">
+  <div class="main-header__container container">
     <a class="main-header__logo">
-    <img class="main-header__logo-img" src="img/content-images/mobile/header-logo-mobile.svg" height="38" width="34" alt="Вы на главной странице Кэт Энерджи"></a>
+      <img class="main-header__logo-img" src="img/content-images/mobile/header-logo-mobile.svg" height="38" width="34" alt="Вы на главной странице Кэт Энерджи">
+    </a>
     <a class="main-header__logo logo-letters">
-      <img class="logo-letters__img" src="img/content-images/logo-letters.svg" alt="Вы на главной странице Кэт Энерджи"></a>
+      <img class="logo-letters__img" src="img/content-images/logo-letters.svg" alt="Вы на главной странице Кэт Энерджи">
+    </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button" aria-label="открыть меню">
         <span class="main-navigation__toggle-img"></span>
@@ -27,7 +29,7 @@
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="catalog.html">каталог продукции</a>
         </li>
-        <li class="site-navigation__item">
+        <li class="site-navigation__item site-navigation__item--summary">
           <a class="site-navigation__link" href="form.html">подбор программы</a>
         </li>
       </ul>
@@ -38,11 +40,12 @@
 <main class="main-index">
   <h1 class="visually-hidden">Магазин функционального питания для котов Кэт Энерджи</h1>
   <section class="main-index__promo promo">
-    <div class="container">
+    <div class="promo__container container">
       <h2 class="promo__title section-title section-title--accent">Функциональное
-        питание для котов</h2>
+      питание для котов</h2>
       <p class="promo__description">Занялся собой? Займись котом!</p>
-      <img class="promo__image" src="img/content-images/mobile/promo-mobile.png" height="270" width="280" alt="фотография корма Кэт Энерджи">
+      <img class="promo__image" src="img/content-images/mobile/promo-mobile.png" height="270" width="280"
+            alt="фотография корма Кэт Энерджи">
       <a class="promo__button button button--primary container" href="form.html">подобрать программу</a>
     </div>
   </section>
@@ -75,24 +78,33 @@
     </ul>
   </section>
   <section class="main-index__illustration illustration">
-    <div class="container">
+    <div class="illustration__container container">
       <h2 class="illustration__title section-title section-title--basic">Живой пример</h2>
       <p class="illustration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <dl class="illustration__data">
-        <dt class="illustration__data-title">снижение веса</dt>
-        <dd class="illustration__data-description">5&nbsp;КГ</dd>
-        <dt class="illustration__data-title">затрачено времени</dt>
-        <dd class="illustration__data-description">60&nbsp;ДНЕЙ</dd>
-        <dt class="illustration__data-title illustration__data-title--accent">Затраты на питание: </dt>
-        <dd class="illustration__data-description illustration__data-description--accent"> 15 000&nbsp;РУБ.</dd>
+        <div class="illustration__data-container">
+          <dt class="illustration__data-title">снижение веса</dt>
+          <dd class="illustration__data-description">5&nbsp;КГ</dd>
+        </div>
+        <div class="illustration__data-container">
+          <dt class="illustration__data-title">затрачено времени</dt>
+          <dd class="illustration__data-description">60&nbsp;ДНЕЙ</dd>
+        </div>
+        <div class="illustration__data-container-modified">
+          <dt class="illustration__data-title-common">Затраты на питание:</dt>
+          <dd class="illustration__data-description-common"> 15 000&nbsp;РУБ.</dd>
+        </div>
       </dl>
-      <img  class="illustration__image" src="img/content-images/mobile/before-mobile.png" height="232" width="280" alt="фотография кота до старта программы по снижению веса">
-      <div class="illustration__range-bar">
-        <label class="illustration__label">
-          <span class="illustration__range-label">было</span>
-          <input class="illustration__range-input" type="range" min="0" max="100" value="50">
-          <span class="illustration__range-label">стало</span>
-        </label>
+      <div class="illustration__image-range-container">
+        <img class="illustration__image" src="img/content-images/mobile/before-mobile.png" height="232" width="280"
+              alt="фотография кота до старта программы по снижению веса">
+        <div class="illustration__range-bar">
+          <label class="illustration__label">
+            <span class="illustration__range-label">было</span>
+            <input class="illustration__range-input" type="range" min="0" max="100" value="50">
+            <span class="illustration__range-label">стало</span>
+          </label>
+        </div>
       </div>
     </div>
   </section>
@@ -104,7 +116,7 @@
         <h2 class="visually-hidden">наш адрес</h2>
         <p class="contacts__description">приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая
-          Конюшенная,&nbsp; д.&nbsp19/8
+          <nobr>Конюшенная,&nbsp; д.&nbsp19/8</nobr>
           Санкт-Петербург
         </address>
       </div>
@@ -112,10 +124,11 @@
     <div class="main-footer__map map map--fullsize">
       <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6cb0badf31482bce998f15db32dc193cc5cacd92af1c434716fc901f27758a92&amp;source=constructor"  height="362" width="320"></iframe>
     </div>
-    <div class="container">
+    <div class="main-footer-bottom__container container">
       <a class="main-footer__logo logo-letters" href="index.html">
-        <img class="logo-letters__img" src="img/content-images/logo-letters.svg" alt="К началу главной страницы Кэт Энерджи"></a>
-        <ul class="main-footer__social social">
+        <img class="logo-letters__img" src="img/content-images/logo-letters.svg" alt="К началу главной страницы Кэт Энерджи">
+      </a>
+      <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">ссылка на профиль вконтакте</span>
@@ -131,7 +144,7 @@
               <span class="visually-hidden">ссылка на профиль в телеграм</span>
             </a>
           </li>
-        </ul>
+      </ul>
       <div class="main-footer__copyright copyright">
         <a  class="copyright__title-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           HTML Academy
