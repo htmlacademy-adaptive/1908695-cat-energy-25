@@ -1,5 +1,6 @@
 .promo-action {
   position: relative;
+  text-align: center;
 }
 
 .promo-action__description {
@@ -12,3 +13,4 @@
   color: $common-color;
   transform: translateY(-50%) translateX(35%);
 }
+

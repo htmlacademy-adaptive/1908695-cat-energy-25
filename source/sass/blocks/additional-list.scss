@@ -1,3 +1,8 @@
 .additional-list {
   @include reset-list;
+  display: grid;
+}
+
+@media all and (min-width: $large-size) {
+
 }
