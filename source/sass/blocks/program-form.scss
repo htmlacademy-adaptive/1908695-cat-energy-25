@@ -1,0 +1,28 @@
+.program-form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.program-form__button-field {
+  @include flex(column, center, center, nowrap);
+}
+
+.program-form__button {
+  align-self: stretch;
+}
+
+@media all and (min-width: $middle-size) {
+  .program-form__button-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    align-items: center;
+    column-gap: 100px;
+  }
+
+  .program-form__button {
+    align-self: center;
+    max-width: 568px;
+    max-height: 52px;
+  }
+}

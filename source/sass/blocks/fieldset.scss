@@ -16,9 +16,15 @@
 }
 
 .fieldset__label {
-  display: block;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+  align-items: center;
 }
 
+.fieldset__label--contacts-gap {
+  column-gap: 10px;
+}
 .fieldset--style-one {
   border: none;
 }
@@ -36,4 +42,14 @@
 
 .fieldset__input::placeholder {
   color: rgba(68, 68, 68, 1);
+}
+
+@media all and (min-width: $middle-size) {
+  .fieldset__label-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    column-gap: 40px;
+  }
 }
