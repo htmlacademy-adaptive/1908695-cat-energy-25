@@ -38,15 +38,17 @@
 
 @media all and (min-width: $large-size) {
   .additional-item {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr auto;
     grid-row: auto;
     align-items: center;
     column-gap: 38px;
+    padding: 15px 0;
   }
 
   .additional-item__purchase {
     grid-column: 3/4;
     max-width: 250px;
+    min-width: 250px;
   }
 
 }

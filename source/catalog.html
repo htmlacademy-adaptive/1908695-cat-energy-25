@@ -22,13 +22,13 @@
         <span class="main-navigation__toggle-img"></span>
       </button>
       <ul class="main-navigation__list site-navigation">
-        <li class="site-navigation__item">
+        <li class="site-navigation__item site-navigation__item--inner-pages">
           <a class="site-navigation__link" href="index.html">главная</a>
         </li>
-        <li class="site-navigation__item site-navigation__item--active">
+        <li class="site-navigation__item site-navigation__item--inner-pages site-navigation__item--active-inner">
           <a class="site-navigation__link">каталог продукции</a>
         </li>
-        <li class="site-navigation__item">
+        <li class="site-navigation__item site-navigation__item--summary site-navigation__item--inner-pages">
           <a class="site-navigation__link" href="form.html">подбор программы</a>
         </li>
       </ul>
@@ -236,11 +236,12 @@
             <button class="additional-item__purchase button button--third" type="submit">заказать</button>
           </li>
         </ul>
-      </section>
-      <section class="main-catalog__promo-action promo-action">
-        <h2 class="visually-hidden">Промо-акция</h2>
-        <img class="promo-action__img" src="img/content-images/mobile/promo-image.png" height="290" width="280" alt="">
-        <p class="promo-action__description">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
+        <div class="catalog-additional__promo-wrapper promo-action">
+          <img class="promo-action__img" src="img/content-images/mobile/promo-image.png"
+                height="290" width="280"
+                alt="фотография чехла для кота">
+          <p class="promo-action__description">Закажите все <br>  и получите чехол для <br> кота в подарок!</p>
+        </div>
       </section>
     </div>
 </main>

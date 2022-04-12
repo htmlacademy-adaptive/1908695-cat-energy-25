@@ -1,16 +1,22 @@
 .promo-action {
-  position: relative;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: auto;
+}
+
+.promo-action__img {
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 
 .promo-action__description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  align-self: end;
+  justify-self: center;
+  z-index: 1;
   font-size: 16px;
   line-height: 20px;
   color: $common-color;
-  transform: translateY(-50%) translateX(35%);
+  text-align: center;
 }
-
