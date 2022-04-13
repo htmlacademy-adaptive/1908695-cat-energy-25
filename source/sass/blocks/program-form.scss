@@ -26,3 +26,13 @@
     max-height: 52px;
   }
 }
+
+@media all and (min-width: $large-size) {
+  .program-form__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    column-gap: 80px;
+  }
+}

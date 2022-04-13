@@ -6,7 +6,6 @@
   margin: 35px 0;
 }
 
-
 @media all and (min-width: $large-size) {
   .catalog-additional {
     display: grid;
@@ -17,7 +16,7 @@
 
   .catalog-additional__tille {
     grid-column: 1/-1;
-    grid-row:1/2;
+    grid-row: 1/2;
   }
 
   .catalog-additional__list {

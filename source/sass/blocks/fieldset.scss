@@ -22,9 +22,14 @@
   align-items: center;
 }
 
+.fieldset__input--message {
+  grid-column: 1/-1;
+}
+
 .fieldset__label--contacts-gap {
   column-gap: 10px;
 }
+
 .fieldset--style-one {
   border: none;
 }
@@ -51,5 +56,13 @@
     grid-template-rows: auto auto;
     row-gap: 20px;
     column-gap: 40px;
+  }
+}
+
+@media all and (min-width: $large-size) {
+  .fieldset__label-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 104px;
   }
 }

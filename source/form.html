@@ -40,49 +40,52 @@
     <h1 class="main-form__title section-title section-title--basic">Подбор программы</h1>
     <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="main-form__program-choice program-form" method="post" action="https://echo.htmlacademy.ru/">
-      <fieldset class="program-form__fieldset fieldset fieldset--style-one">
-        <label class="fieldset__label">
-          <span class="fieldset__label-field">ИМЯ:<sup>*</sup></span>
-          <input class="fieldset__input" type="text" name="owner-name" placeholder="барсик">
-        </label>
-        <label class="fieldset__label">
-          <span class="fieldset__label-field">Вес (кг):<sup>*</sup></span>
-          <input class="fieldset__input" type="text" name="cat-weight" placeholder="7">
-        </label>
-        <label class="fieldset__label">
-          <span class="fieldset__label-field">Возраст (лет):</span>
-          <input class="fieldset__input" type="text" name="cat-age" placeholder="7">
-        </label>
-      </fieldset>
-      <fieldset class="program-form__fieldset fieldset fieldset--style-two">
-        <label class="fieldset__label">
-          <input class="fieldset__input" type="radio" name="program-type" value="slim" checked>
-          <span class="fieldset__label-field">похудение</span>
-        </label>
-        <label class="fieldset__label">
-          <input class="fieldset__input" type="radio" name="program-type" value="weight-gain">
-          <span class="fieldset__label-field">Набор массы</span>
-        </label>
-        <label class="fieldset__label">
-          <input class="fieldset__input" type="radio" name="program-type" value="advice">
-          <span class="fieldset__label-field">Не знаю (Нужен ваш совет)</span>
-        </label>
-      </fieldset>
+      <div class="program-form__container">
+        <fieldset class="program-form__fieldset fieldset fieldset--style-one">
+          <label class="fieldset__label">
+            <span class="fieldset__label-field">ИМЯ:<sup>*</sup></span>
+            <input class="fieldset__input" type="text" name="owner-name" placeholder="барсик">
+          </label>
+          <label class="fieldset__label">
+            <span class="fieldset__label-field">Вес (кг):<sup>*</sup></span>
+            <input class="fieldset__input" type="text" name="cat-weight" placeholder="7">
+          </label>
+          <label class="fieldset__label">
+            <span class="fieldset__label-field">Возраст (лет):</span>
+            <input class="fieldset__input" type="text" name="cat-age" placeholder="7">
+          </label>
+        </fieldset>
+        <fieldset class="program-form__fieldset fieldset fieldset--style-two">
+          <label class="fieldset__label">
+            <input class="fieldset__input" type="radio" name="program-type" value="slim" checked>
+            <span class="fieldset__label-field">похудение</span>
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__input" type="radio" name="program-type" value="weight-gain">
+            <span class="fieldset__label-field">Набор массы</span>
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__input" type="radio" name="program-type" value="advice">
+            <span class="fieldset__label-field">Не знаю (Нужен ваш совет)</span>
+          </label>
+        </fieldset>
+      </div>
       <fieldset class="program-form__fieldset fieldset fieldset--style-one">
         <legend class="fieldset-title section-title section-title--small section-title--basic">Контактные данные (владельца кота)</legend>
-        <label class="fieldset__label fieldset__label--contacts-gap">
+        <div class="program-form__container">
+          <label class="fieldset__label fieldset__label--contacts-gap">
           <span class="fieldset__label-field">E-mail:<sup>*</sup></span>
           <input class="fieldset__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
         </label>
-        <label class="fieldset__label fieldset__label--contacts-gap">
-          <span class="fieldset__label-field">Телефон:<sup>*</sup></span>
-          <input class="fieldset__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
-        </label>
+          <label class="fieldset__label fieldset__label--contacts-gap">
+            <span class="fieldset__label-field">Телефон:<sup>*</sup></span>
+            <input class="fieldset__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
+          </label></div>
       </fieldset>
       <fieldset class="program-form__fieldset fieldset fieldset--style-one">
         <legend class="fieldset-title section-title section-title--small section-title--basic">Комментарий</legend>
         <label class="fieldset__label">
-          <textarea class="fieldset__input" name="message" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <textarea class="fieldset__input fieldset__input--message" name="message" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </label>
       </fieldset>
       <fieldset class="program-form__fieldset fieldset fieldset--style-one">
