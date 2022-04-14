@@ -2,12 +2,12 @@
   background-color: $accent-color;
 }
 
-.main-footer-bottom__container {
+.main-footer__bottom-container {
   @include flex(column, center, space-between, nowrap);
 }
 
 @media all and (min-width: $middle-size) {
-  .main-footer-bottom__container {
+  .main-footer__bottom-container {
     @include flex(row, center, space-between, nowrap);
   }
 }
@@ -19,7 +19,7 @@
     grid-template-rows: 95px 200px 107px auto;
   }
 
-  .main-footer-bottom__container {
+  .main-footer__bottom-container {
     grid-column: -1/1;
     grid-row: 4/5;
   }
