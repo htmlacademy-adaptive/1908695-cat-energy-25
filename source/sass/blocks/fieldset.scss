@@ -16,7 +16,18 @@
 }
 
 .fieldset__label {
-  display: block;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.fieldset__input--message {
+  grid-column: 1/-1;
+}
+
+.fieldset__label--contacts-gap {
+  column-gap: 10px;
 }
 
 .fieldset--style-one {
@@ -36,4 +47,22 @@
 
 .fieldset__input::placeholder {
   color: rgba(68, 68, 68, 1);
+}
+
+@media all and (min-width: $middle-size) {
+  .fieldset__label-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    column-gap: 40px;
+  }
+}
+
+@media all and (min-width: $large-size) {
+  .fieldset__label-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 104px;
+  }
 }

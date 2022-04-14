@@ -1,3 +1,21 @@
 .basic-list {
   @include reset-list;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, auto);
+}
+
+@media all and (min-width: $middle-size) {
+  .basic-list {
+    grid-template-columns: repeat(auto-fill, 324px);
+    grid-gap: 60px;
+  }
+}
+
+@media all and (min-width: $large-size) {
+  .basic-list {
+    grid-template-columns: repeat(auto-fill, 245px);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
 }

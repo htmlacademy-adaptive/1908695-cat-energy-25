@@ -1,12 +1,25 @@
 .basic-item {
+  @include flex(column, stretch, center, nowrap);
   padding: 25px 20px;
 }
 
-.basic-item__link {
-  text-decoration: none;
+.basic-item__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.basic-item__container-modified {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 110px;
 }
 
 .basic-item__title {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -15,7 +28,73 @@
   text-transform: uppercase;
 }
 
-.basic-item__description {
+.basic-item__data {
+  text-align: center;
   font-size: 12px;
   line-height: 16px;
+}
+
+.basic-item__link-img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.basic-item__link {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.basic-item__description {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.basic-item__data-description {
+  margin: 0;
+  justify-self: end;
+}
+
+.basic-item__link,
+.basic-item__link-img {
+  text-decoration: none;
+}
+
+@media all and (min-width: $middle-size) {
+  .basic-item {
+    padding: 37px;
+    justify-content: flex-end;
+    min-height: 430px;
+    background-color: $accent-color;
+  }
+
+  .basic-item__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .basic-item__title,
+  .basic-item__link-img {
+    text-align: center;
+  }
+
+  .basic-item__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media all and (min-width: $large-size) {
+  .basic-item {
+    padding: 41px;
+    background-color: $accent-color;
+  }
+
+  .basic-item__container-modified {
+    padding-top: 110px;
+  }
 }

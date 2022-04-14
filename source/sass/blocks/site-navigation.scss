@@ -21,7 +21,8 @@
   border-bottom: 2px solid transparent;
 }
 
-.site-navigation__item--active {
+.site-navigation__item--active,
+.site-navigation__item--active-inner {
   border-bottom: 2px solid $basic-color;
 }
 
@@ -54,5 +55,9 @@
 
   .site-navigation__item--active {
     border-bottom: 2px solid $common-color;
+  }
+
+  .site-navigation__item--inner-pages {
+    color: $basic-font-color-three;
   }
 }
