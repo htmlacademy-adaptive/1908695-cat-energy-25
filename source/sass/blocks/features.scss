@@ -1,5 +1,7 @@
 .features__title {
   @include reset();
+
+  margin-bottom: 40px;
 }
 
 .features__list {
@@ -8,8 +10,7 @@
 
 .features__list-item {
   @include inline-grid(min-content, auto, 20px, center);
-  margin-bottom: 24px;
-  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .features__list-item::before {
@@ -28,16 +29,21 @@
   .features__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
-    column-gap: 50px;
+    column-gap: 150px;
     row-gap: 70px;
-    padding: 47px 0;
+  }
+
+  .features__title {
+    margin-bottom: 72px;
   }
 
   .features__list-item {
+    position: relative;
     display: inline-grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    min-height: 250px;
+    grid-template-rows: min-content auto;
+    align-content: start;
+    min-height: 230px;
     row-gap: 30px;
     margin-bottom: 0;
   }
@@ -46,6 +52,36 @@
     width: 80px;
     height: 80px;
     background-color: $basic-color;
+  }
+
+  .features__list-item::after {
+    position: absolute;
+    content: "";
+    top: -40px;
+    right: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color:$accent-color;
+    z-index: -1;
+  }
+
+  .features__list-item--first::after {
+    content: "1";
+  }
+
+  .features__list-item--second::after {
+    content: "2";
+  }
+
+  .features__list-item--third::after {
+    content: "3";
+  }
+
+  .features__list-item--fourth::after {
+    content: "4";
   }
 }
 

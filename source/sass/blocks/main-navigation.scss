@@ -21,7 +21,7 @@
     border-bottom: 2.5px solid $basic-font-color-three;
     background-color: transparent;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 
   .main-navigation__toggle::before {
@@ -33,7 +33,7 @@
     height: 1.5px;
     background-color: $basic-font-color-three;
     content: "";
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 
   .main-navigation__toggle::after {
@@ -45,7 +45,6 @@
     height: 1.5px;
     background-color: $basic-font-color-three;
     content: "";
-    //transition: 0.2s ease-in-out;
   }
 
   .main-navigation--closed .main-navigation__toggle {
@@ -74,11 +73,11 @@
   }
 
   .main-navigation--opened .main-navigation__toggle::before {
-    display: none;
+    transform: rotate(90deg) translateX(16px);
   }
 
   .main-navigation--opened .main-navigation__toggle::after {
-    transform: rotate(90deg) translateX(8px);
+    display: none;
   }
 
   .main-navigation--nojs .main-navigation__toggle {

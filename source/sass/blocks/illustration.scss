@@ -8,15 +8,35 @@
   margin-bottom: 40px;
 }
 
+.illustration__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .illustration__data {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
 }
 
 .illustration__data-container {
+  position: relative;
+  min-width: 124px;
   @include flex(column, center, center, nowrap);
   justify-self: center;
   margin-bottom: 20px;
+}
+
+.illustration__data-container::before {
+  position: absolute;
+  content: "";
+  min-width: 124px;
+  top: -5px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  border: 1px solid rgba(205, 205, 205, 1);
+  border-radius: 5%;
 }
 
 .illustration__data-container-modified {
@@ -52,8 +72,13 @@
 }
 
 .illustration__data-title {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
   font-size: 12px;
   line-height: 12px;
+  background-color: rgba(234, 234, 234, 1);
 }
 
 .illustration__range-label {
@@ -72,10 +97,26 @@
     align-items: center;
   }
 
+  .illustration__data-container {
+    min-width: 162px;
+  }
+
+  .illustration__data-container::before {
+    min-width: 162px;
+    top: -5px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    border: 1px solid rgba(205, 205, 205, 1);
+    border-radius: 5%;
+  }
+
   .illustration__data-container-modified {
     grid-column: 3/4;
     justify-self: end;
+    align-self: start;
     flex-direction: column;
+    padding-top: 10px;
   }
 
   .illustration__data-description-common {
@@ -85,6 +126,13 @@
   .illustration__data-title {
     font-size: 14px;
     line-height: 14px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: $common-color;
+  }
+
+  br {
+    display: none;
   }
 
   .illustration__data-description {
@@ -129,8 +177,12 @@
   }
 
   .illustration__data {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-column: 1/2;
+  }
+
+  .illustration__data-title {
+    background-color: $accent-color;
   }
 
   .illustration__data-container-modified {

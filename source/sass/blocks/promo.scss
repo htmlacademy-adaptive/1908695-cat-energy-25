@@ -9,7 +9,7 @@
 .promo::before {
   position: absolute;
   content: "";
-  top: -160px;
+  top: -189px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -27,10 +27,19 @@
 
 .promo__title {
   text-align: center;
+  margin-bottom: 25px;
+  margin-top: 0;
 }
 
 .promo__description {
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
+.promo__image {
+  min-height: 270px;
+
 }
 
 .promo__button {
