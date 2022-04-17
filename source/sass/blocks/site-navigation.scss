@@ -16,6 +16,14 @@
   padding: 22px 0 24px 0;
   text-decoration: none;
   color: inherit;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .site-navigation__item {
@@ -52,6 +60,10 @@
 
   .site-navigation__item::after {
     display: none;
+  }
+
+  .site-navigation__link {
+    padding-bottom: 5px;
   }
 }
 

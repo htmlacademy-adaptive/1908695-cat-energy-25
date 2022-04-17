@@ -62,11 +62,12 @@
   }
 
   .service__list-item::after {
-    content: "";
+    justify-self: center;
     width: 200px;
     height: 200px;
     grid-column: 2/3;
     grid-row: 1/4;
+    content: "";
     border-radius: 50%;
     background-color: $basic-color;
   }

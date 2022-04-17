@@ -9,13 +9,13 @@
 .promo::before {
   position: absolute;
   content: "";
-  top: -189px;
+  top: -185px;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   background: url("../img/decorative-images/mobile/promo-background.jpg") no-repeat 50% 50%;
-  background-size: auto;
+  background-size: contain;
   z-index: -1;
 }
 
@@ -39,7 +39,6 @@
 
 .promo__image {
   min-height: 270px;
-
 }
 
 .promo__button {
@@ -61,7 +60,7 @@
 
   .promo__container {
     display: grid;
-    grid-template-columns: 91px 618px;
+    grid-template-columns: 91px 1fr;
     grid-template-rows: auto auto 610px;
     justify-content: start;
   }
@@ -113,6 +112,7 @@
     grid-column: 1/-1;
     justify-self: center;
     z-index: 0;
+    min-height: 500px;
   }
 
   .promo__button {

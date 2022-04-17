@@ -16,4 +16,18 @@
   .main-index__features {
     margin-bottom: 0;
   }
+
+  .main-index {
+    padding-top: 100px;
+  }
+}
+
+@media all and (min-width: $large-size) {
+  .main-index {
+    padding-top: 0;
+  }
+
+  .main-index__promo {
+    margin-bottom: 82px;
+  }
 }

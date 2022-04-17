@@ -3,7 +3,7 @@
     position: relative;
   }
 
- .main-navigation--nojs .main-navigation__list {
+  .main-navigation--nojs .main-navigation__list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,39 +12,40 @@
   }
 
   .main-navigation__toggle {
+    display: none;
     position: absolute;
     min-height: 26px;
     width: 24px;
-    top: -50px;
+    top: -57px;
     right: 15px;
     border: none;
     border-bottom: 2.5px solid $basic-font-color-three;
     background-color: transparent;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
   }
 
   .main-navigation__toggle::before {
     position: absolute;
-    top: 8px;
-    left:0;
+    top: 33px;
+    left: 0;
     display: block;
     width: 100%;
     height: 1.5px;
     background-color: $basic-font-color-three;
     content: "";
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   .main-navigation__toggle::after {
     position: absolute;
-    bottom: 6px;
-    left:0;
+    bottom: 7px;
+    left: 0;
     display: block;
     width: 100%;
     height: 1.5px;
     background-color: $basic-font-color-three;
     content: "";
+    transition: 0.3s ease-in-out;
   }
 
   .main-navigation--closed .main-navigation__toggle {
@@ -69,15 +70,20 @@
   }
 
   .main-navigation--opened .main-navigation__toggle {
-    transform: rotate(45deg) translateY(-10px) translateX(5px);
+    display: block;
+    border-color: transparent;
   }
 
   .main-navigation--opened .main-navigation__toggle::before {
-    transform: rotate(90deg) translateX(16px);
+    visibility: visible;
+    transform: rotate(45deg);
+    top: 23px;
   }
 
   .main-navigation--opened .main-navigation__toggle::after {
-    display: none;
+    visibility: visible;
+    transform: rotate(-45deg);
+    top: 22.5px;
   }
 
   .main-navigation--nojs .main-navigation__toggle {
