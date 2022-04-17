@@ -6,6 +6,15 @@
   background-color: $basic-color;
   text-decoration: none;
   border: none;
+
+  &:hover {
+    background-color: rgba(94, 170, 47, 1);
+  }
+
+  &:focus {
+    background-color: rgba(94, 170, 47, 1);
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--primary {
@@ -19,6 +28,16 @@
   line-height: 16px;
   color: $basic-font-color-three;
   background-color: transparent;
+
+  &:hover {
+    opacity: 0.6;
+    background-color: transparent;
+  }
+
+  &:focus {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+  }
 }
 
 .button--third {

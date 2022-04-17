@@ -12,16 +12,18 @@
 
 <header class="page__main-header main-header">
   <div class="main-header__container container">
-    <a class="main-header__logo">
-      <img class="main-header__logo-img" src="img/content-images/mobile/header-logo-mobile.svg" height="38" width="34" alt="Вы на главной странице Кэт Энерджи">
-    </a>
-    <a class="main-header__logo logo-letters">
-      <img class="logo-letters__img" src="img/content-images/logo-letters.svg" alt="Вы на главной странице Кэт Энерджи">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button" aria-label="открыть меню">
-        <span class="main-navigation__toggle-img"></span>
-      </button>
+    <div class="main-header__container-logo">
+      <a class="main-header__logo">
+        <img class="main-header__logo-img" src="img/content-images/mobile/header-logo-mobile.svg" height="38" width="34"
+            alt="Вы на главной странице Кэт Энерджи">
+      </a>
+      <a class="main-header__logo logo-letters">
+        <img class="logo-letters__img" src="img/content-images/logo-letters.svg"
+              alt="Вы на главной странице Кэт Энерджи">
+      </a>
+    </div>
+    <nav class="main-navigation main-navigation--nojs">
+      <button class="main-navigation__toggle" type="button" aria-label="открыть меню"></button>
       <ul class="main-navigation__list site-navigation">
         <li class="site-navigation__item site-navigation__item--active">
           <a class="site-navigation__link">главная</a>
@@ -83,11 +85,11 @@
       <p class="illustration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <dl class="illustration__data">
         <div class="illustration__data-container">
-          <dt class="illustration__data-title">снижение веса</dt>
+          <dt class="illustration__data-title">снижение <br> веса</dt>
           <dd class="illustration__data-description">5&nbsp;КГ</dd>
         </div>
         <div class="illustration__data-container">
-          <dt class="illustration__data-title">затрачено времени</dt>
+          <dt class="illustration__data-title">затрачено <br> времени</dt>
           <dd class="illustration__data-description">60&nbsp;ДНЕЙ</dd>
         </div>
         <div class="illustration__data-container-modified">
@@ -115,9 +117,11 @@
       <div class="contacts__container">
         <h2 class="visually-hidden">наш адрес</h2>
         <p class="contacts__description">приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая
+        <address class="contacts__address">
+          ул. Большая
           <nobr>Конюшенная,&nbsp; д.&nbsp19/8</nobr>
-          Санкт-Петербург
+
+          <span class="contacts__city">Санкт-Петербург</span>
         </address>
       </div>
     </section>
@@ -156,5 +160,6 @@
       </div>
     </div>
   </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

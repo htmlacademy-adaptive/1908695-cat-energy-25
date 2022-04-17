@@ -7,7 +7,8 @@
 
 @media all  and (min-width: $middle-size) {
   .container {
-    width: 768px;
+    width: 95%;
+    max-width: 1439px;
     padding: 0 30px;
   }
 }

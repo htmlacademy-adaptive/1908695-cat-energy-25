@@ -1,6 +1,7 @@
 .main-index__promo,
 .main-index__service {
   margin-bottom: 20px;
+  margin-top: 14px;
 }
 
 .main-index__features {
@@ -14,5 +15,19 @@
 @media all and (min-width: $middle-size) {
   .main-index__features {
     margin-bottom: 0;
+  }
+
+  .main-index {
+    padding-top: 100px;
+  }
+}
+
+@media all and (min-width: $large-size) {
+  .main-index {
+    padding-top: 0;
+  }
+
+  .main-index__promo {
+    margin-bottom: 82px;
   }
 }
