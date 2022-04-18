@@ -5,6 +5,7 @@
 
 .fieldset-title {
   line-height: 26px;
+  margin-bottom: 17px;
 }
 
 .fieldset__label,
@@ -20,6 +21,12 @@
   grid-template-columns: auto 1fr;
   column-gap: 15px;
   align-items: center;
+  margin-bottom: 13px;
+}
+
+.fieldset__label--summary,
+.fieldset__label--message {
+  margin-bottom: 0;
 }
 
 .fieldset__input--message {
@@ -35,6 +42,7 @@
 }
 
 .fieldset--style-two {
+  margin-bottom: 26px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   border-right: none;
@@ -43,6 +51,11 @@
 
 .fieldset__input {
   font-family: "Oswald", "Arial", sans-serif;
+  border: 2px solid rgba(231, 231, 231, 1);
+
+  &:hover {
+    border: 2px solid rgba(205, 205, 205, 1);
+  }
 }
 
 .fieldset__input::placeholder {

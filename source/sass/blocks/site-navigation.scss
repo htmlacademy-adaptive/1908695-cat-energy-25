@@ -78,6 +78,7 @@
   }
 
   .site-navigation__item--active {
+    color: rgba(255, 255, 255, 0.1);
     border-bottom: 2px solid $common-color;
   }
 
