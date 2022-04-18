@@ -19,13 +19,36 @@
 }
 
 @media all and (min-width: $middle-size) {
+  .main-form {
+    padding-top: 100px;
+  }
+
   .main-form__container {
     padding: 0 70px;
+  }
+
+  .main-form__title {
+    margin-top: 50px;
+    margin-bottom: 54px;
+  }
+
+  .main-form__description {
+    max-width: 270px;
+    margin-bottom: 40px;
   }
 }
 
 @media all and (min-width: $large-size) {
+  .main-form {
+    padding-top: 0;
+  }
+
   .main-form__container {
     padding: 0 110px;
+  }
+
+  .main-form__description {
+    max-width: 270px;
+    margin-bottom: 0;
   }
 }

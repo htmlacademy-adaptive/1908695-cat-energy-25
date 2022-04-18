@@ -2,9 +2,14 @@
   background-color: $common-color;
 }
 
+.contacts--inner-pages {
+  background-color: $accent-color;
+
+}
 .contacts__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
   align-items: center;
   padding: 26px 20px;
 }
