@@ -5,22 +5,27 @@
   color: $common-color;
   background-color: $basic-color;
   text-decoration: none;
-  border: none;
+  border: 2px solid transparent;
 
   &:hover {
     background-color: rgba(94, 170, 47, 1);
   }
 
-  &:focus {
+  &:active {
     background-color: rgba(94, 170, 47, 1);
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    border: 2px solid transparent;
+    outline: 2px solid $basic-font-color;
   }
 }
 
 .button--primary {
   font-size: 14px;
   line-height: 18px;
-  padding: 10px 20px;
+  padding: 8px 20px;
 }
 
 .button--secondary {
@@ -34,21 +39,38 @@
     background-color: transparent;
   }
 
-  &:focus {
+  &:active {
     color: rgba(0, 0, 0, 0.3);
     background-color: transparent;
+  }
+
+  &:focus {
+    outline: 2px solid $basic-font-color;
   }
 }
 
 .button--third {
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 20px;
+  padding: 8px 20px;
 }
 
 .button--accent-color {
   color: rgba(68, 68, 68, 1);
   background-color: $accent-color;
+
+  &:hover {
+    background-color: $accent-color-modified;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:focus {
+    border: 2px solid transparent;
+    outline: 2px solid $basic-font-color;
+  }
 }
 
 @media all and (min-width: 768px) {

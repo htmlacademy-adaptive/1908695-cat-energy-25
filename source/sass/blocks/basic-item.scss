@@ -1,6 +1,19 @@
 .basic-item {
+  position: relative;
+
   @include flex(column, stretch, center, nowrap);
   padding: 25px 20px;
+}
+
+.basic-item::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: -30px;
+  content: "";
+  height: 1px;
+  width: calc(100vw + 30px);
+  background-color: rgba(230, 230, 230, 1);
 }
 
 .basic-item__container {
@@ -10,12 +23,28 @@
 }
 
 .basic-item__container-modified {
-  min-height: 120px;
+  position: relative;
+  max-height: 138px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 110px;
+  padding-top: 77px;
+}
+
+.basic-item__container-modified::before,
+.basic-item__container-modified::after {
+  position: absolute;
+  top:20%;
+  left:43%;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: rgba(211, 211, 211, 1);
+}
+
+.basic-item__container-modified::after {
+  transform: rotate(90deg);
 }
 
 .basic-item__title {
@@ -70,6 +99,17 @@
     justify-content: flex-end;
     min-height: 430px;
     background-color: $accent-color;
+  }
+
+  .basic-item::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: -30px;
+    content: "";
+    height: 1px;
+    width: calc(100vw + 30px);
+    background-color: rgba(230, 230, 230, 1);
   }
 
   .basic-item__container {
