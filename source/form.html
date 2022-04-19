@@ -59,17 +59,19 @@
         </fieldset>
         <fieldset class="program-form__fieldset fieldset fieldset--style-two">
           <label class="fieldset__label">
-            <input class="fieldset__input visually-hidden" type="radio" name="program-type" value="slim" checked>
+            <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="program-type" value="slim" checked>
             <span class="fieldset__label-custom"></span>
-            <span class="fieldset__label-field">похудение</span>
+            <span class="fieldset__label-field fieldset__label-field--radio">похудение</span>
           </label>
           <label class="fieldset__label">
-            <input class="fieldset__input" type="radio" name="program-type" value="weight-gain">
-            <span class="fieldset__label-field">Набор массы</span>
+            <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="program-type" value="weight-gain">
+            <span class="fieldset__label-custom"></span>
+            <span class="fieldset__label-field fieldset__label-field--radio">Набор массы</span>
           </label>
-          <label class="fieldset__label fieldset__label--summary">
-            <input class="fieldset__input" type="radio" name="program-type" value="advice">
-            <span class="fieldset__label-field">Не знаю (Нужен ваш совет)</span>
+          <label class="fieldset__label  fieldset__label--summary">
+            <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="program-type" value="advice">
+            <span class="fieldset__label-custom"></span>
+            <span class="fieldset__label-field fieldset__label-field--radio">Не знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
       </div>
@@ -95,20 +97,24 @@
         <legend class="fieldset-title section-title section-title--small section-title--basic">Дополнительно</legend>
         <div class="fieldset__label-container">
           <label class="fieldset__label">
-          <input class="fieldset__input" type="checkbox" name="sweetener" checked>
-          <span class="fieldset__label-field">сахарозаменитель</span>
-        </label>
-          <label class="fieldset__label">
-            <input class="fieldset__input" type="checkbox" name="water">
-            <span class="fieldset__label-field">питьевая вода</span>
+            <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="sweetener" checked>
+            <span class="fieldset__label-custom-checkbox"></span>
+            <span class="fieldset__label-field fieldset__label-field--checkbox">сахарозаменитель</span>
           </label>
           <label class="fieldset__label">
-            <input class="fieldset__input" type="checkbox" name="milk">
-            <span class="fieldset__label-field">молоко</span>
+            <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="water">
+            <span class="fieldset__label-custom-checkbox"></span>
+            <span class="fieldset__label-field fieldset__label-field--checkbox">питьевая вода</span>
+          </label>
+          <label class="fieldset__label">
+            <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="milk">
+            <span class="fieldset__label-custom-checkbox"></span>
+            <span class="fieldset__label-field fieldset__label-field--checkbox">молоко</span>
           </label>
           <label class="fieldset__label fieldset__label--summary">
-            <input class="fieldset__input" type="checkbox" name="vitamins">
-            <span class="fieldset__label-field">витамины</span>
+            <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="vitamins">
+            <span class="fieldset__label-custom-checkbox"></span>
+            <span class="fieldset__label-field fieldset__label-field--checkbox">витамины</span>
           </label></div>
       </fieldset>
       <div class="program-form__button-field">

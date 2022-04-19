@@ -34,6 +34,7 @@
 }
 
 .fieldset__label {
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 15px;
@@ -45,15 +46,73 @@
   padding: 8px 1px;
 }
 
-.fieldset__label-custom {
-  width: 40px;
-  height: 40px;
+.fieldset__label-field--radio {
+  padding: 8px 1px 8px 45px;
+}
+
+.fieldset__label-custom,
+.fieldset__label-custom-checkbox {
+  position: absolute;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 2px solid rgba(231, 231, 231, 1);
 }
 
-.fieldset__input:checked + .fieldset__label-custom {
-  background-color: red;
+.fieldset__label-custom-checkbox {
+  border-radius: 0;
+}
+
+.fieldset__label-custom-checkbox::before {
+  display: none;
+  position: absolute;
+  top:15%;
+  right:17%;
+  content: "";
+  width: 17px;
+  height: 11px;
+  border-left: 2px solid rgba(104, 183, 56, 1);
+  border-bottom: 2px solid rgba(104, 183, 56, 1);
+  transform: rotate(-52deg);
+}
+
+.fieldset__label-custom::before {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 13.5px;
+  height: 13.5px;
+  top:25%;
+  right:25%;
+  border-radius: 50%;
+  background-color:  rgba(104, 183, 56, 1);
+}
+
+.fieldset__input--radio:hover + .fieldset__label-custom,
+.fieldset__input--checkbox:hover + .fieldset__label-custom-checkbox {
+  border-color: rgba(186, 186, 186, 1);
+}
+
+.fieldset__input--radio:focus + .fieldset__label-custom,
+.fieldset__input--checkbox:focus + .fieldset__label-custom-checkbox {
+  border: 2px solid transparent;
+  outline: 2px solid $basic-font-color;
+}
+
+.fieldset__input--radio:disabled + .fieldset__label-custom,
+.fieldset__input--radio:disabled ~ .fieldset__label-field--radio,
+.fieldset__input--checkbox:disabled + .fieldset__label-custom-checkbox,
+.fieldset__input--checkbox:disabled ~ .fieldset__label-field--checkbox{
+  opacity: 0.3;
+}
+
+.fieldset__input--radio:checked + .fieldset__label-custom::before,
+.fieldset__input--checkbox:checked  + .fieldset__label-custom-checkbox::before {
+  display: block;
+}
+
+.fieldset__label-field--checkbox {
+  padding-left: 48px;
 }
 
 .fieldset__label--summary,
@@ -169,6 +228,30 @@
     top:60%;
     left:105%;
     width: 300%;
+  }
+
+  .fieldset__label-custom,
+  .fieldset__label-custom-checkbox {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fieldset__label-custom::before {
+    width: 18px;
+    height: 18px;
+    top: 25%;
+    right: 25%;
+  }
+
+  .fieldset__label-custom-checkbox::before {
+    width: 23px;
+    height: 15px;
+    top:19%;
+  }
+
+  .fieldset__label-field--radio,
+  .fieldset__label-field--checkbox {
+    padding-left: 55px;
   }
 }
 
