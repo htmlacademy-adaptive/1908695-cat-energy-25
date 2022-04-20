@@ -6,9 +6,44 @@
   @include flex(column, center, space-between, nowrap);
 }
 
+.main-footer__logo,
+.main-footer__social {
+  width: 100%;
+  border-bottom: 1px solid $common-color-two;
+}
+
+.main-footer__logo {
+  display: flex;
+  min-height: 100px;
+}
+
+.main-footer__social {
+  @include flex(row, center, center, nowrap);
+  min-height: 63px;
+}
+
+.main-footer__copyright {
+  min-height: 78px;
+  width: 100%;
+  @include flex(row, center, space-between, nowrap);
+}
+
 @media all and (min-width: $middle-size) {
   .main-footer__bottom-container {
     @include flex(row, center, space-between, nowrap);
+  }
+
+  .main-footer__logo,
+  .main-footer__social {
+    border-bottom: none;
+  }
+
+  .main-footer__logo {
+    justify-content: flex-start;
+  }
+
+  .main-footer__copyright {
+    justify-content: flex-end;
   }
 }
 

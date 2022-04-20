@@ -2,6 +2,11 @@
   padding: 20px;
   padding-left: 0;
   display: grid;
+  border-bottom: 1px solid $border-decoration-color;
+}
+
+.additional-item:first-child {
+  border-top: 1px solid $border-decoration-color;
 }
 
 .additional-item__link {

@@ -20,6 +20,16 @@
   .main-catalog {
     padding-top: 100px;
   }
+
+  .main-catalog__title {
+    margin-top: 63px;
+    margin-bottom: 78px;
+    text-align: left;
+  }
+
+  .main-catalog__title::after {
+    display: none;
+  }
 }
 
 @media all and (min-width: $large-size) {

@@ -10,3 +10,10 @@
     opacity: 0.3;
   }
 }
+
+@media all and (min-height: $middle-size) {
+  .logo-letters__img {
+    margin: 0;
+  }
+
+}
