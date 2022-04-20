@@ -1,0 +1,8 @@
+.social {
+  @include reset-list();
+}
+
+.social__item {
+  width: 30px;
+  height: 30px;
+}
