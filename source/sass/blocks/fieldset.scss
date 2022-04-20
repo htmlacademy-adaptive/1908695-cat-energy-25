@@ -12,7 +12,7 @@
 
 .fieldset-title::after {
   position: absolute;
-  top:60%;
+  top: 60%;
   left: 120%;
   height: 2px;
   width: 100vw;
@@ -21,7 +21,7 @@
 }
 
 .fieldset-title--modified::after {
-  top:30%;
+  top: 30%;
   left: 110%;
 }
 
@@ -66,8 +66,8 @@
 .fieldset__label-custom-checkbox::before {
   display: none;
   position: absolute;
-  top:15%;
-  right:17%;
+  top: 15%;
+  right: 17%;
   content: "";
   width: 17px;
   height: 11px;
@@ -82,10 +82,10 @@
   content: "";
   width: 13.5px;
   height: 13.5px;
-  top:25%;
-  right:25%;
+  top: 25%;
+  right: 25%;
   border-radius: 50%;
-  background-color:  rgba(104, 183, 56, 1);
+  background-color: rgba(104, 183, 56, 1);
 }
 
 .fieldset__input--radio:hover + .fieldset__label-custom,
@@ -102,12 +102,12 @@
 .fieldset__input--radio:disabled + .fieldset__label-custom,
 .fieldset__input--radio:disabled ~ .fieldset__label-field--radio,
 .fieldset__input--checkbox:disabled + .fieldset__label-custom-checkbox,
-.fieldset__input--checkbox:disabled ~ .fieldset__label-field--checkbox{
+.fieldset__input--checkbox:disabled ~ .fieldset__label-field--checkbox {
   opacity: 0.3;
 }
 
 .fieldset__input--radio:checked + .fieldset__label-custom::before,
-.fieldset__input--checkbox:checked  + .fieldset__label-custom-checkbox::before {
+.fieldset__input--checkbox:checked + .fieldset__label-custom-checkbox::before {
   display: block;
 }
 
@@ -212,8 +212,8 @@
 
   .fieldset-title::before {
     position: absolute;
-    top:60%;
-    left:-70px;
+    top: 60%;
+    left: -70px;
     height: 2px;
     width: 30px;
     background-color: $basic-color;
@@ -221,12 +221,12 @@
   }
 
   .fieldset-title::after {
-    left:115%;
+    left: 115%;
   }
 
   .fieldset-title--modified::after {
-    top:60%;
-    left:105%;
+    top: 60%;
+    left: 105%;
     width: 300%;
   }
 
@@ -246,7 +246,7 @@
   .fieldset__label-custom-checkbox::before {
     width: 23px;
     height: 15px;
-    top:19%;
+    top: 19%;
   }
 
   .fieldset__label-field--radio,

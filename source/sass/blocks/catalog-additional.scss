@@ -8,7 +8,7 @@
 .catalog-additional__tille::after,
 .catalog-additional__tille::before {
   position: absolute;
-  top:65%;
+  top: 65%;
   left: 245px;
   height: 2px;
   width: 100vw;
@@ -30,28 +30,25 @@
   }
 
   .catalog-additional__tille::after {
-    left:360px;
+    left: 360px;
   }
 
   .catalog-additional__tille::before {
     display: inline-block;
-    top:65%;
+    top: 65%;
     left: -65px;
     width: 30px;
   }
 }
 
 @media all and (min-width: $large-size) {
-  .catalog-additional__tille {
-    margin-left: 0;
-  }
-
   .catalog-additional__tille::before {
     display: inline-block;
-    top:65%;
+    top: 65%;
     left: -110px;
     width: 70px;
   }
+
   .catalog-additional {
     display: grid;
     grid-template-columns: 1fr min-content;
@@ -62,6 +59,7 @@
   .catalog-additional__tille {
     grid-column: 1/-1;
     grid-row: 1/2;
+    margin-left: 0;
   }
 
   .catalog-additional__list {

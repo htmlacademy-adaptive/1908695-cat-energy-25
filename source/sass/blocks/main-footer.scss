@@ -25,6 +25,7 @@
 .main-footer__copyright {
   min-height: 78px;
   width: 100%;
+
   @include flex(row, center, space-between, nowrap);
 }
 
