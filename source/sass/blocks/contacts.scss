@@ -4,8 +4,8 @@
 
 .contacts--inner-pages {
   background-color: $accent-color;
-
 }
+
 .contacts__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -32,12 +32,18 @@
 }
 
 @media all and (min-width: 768px) {
+  .contacts {
+    background-color: $common-color;
+  }
   .contacts__container {
     grid-template-columns: min-content 1fr;
     min-height: 200px;
     padding: 50px 70px;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .contacts--inner-pages {
     background-color: $accent-color;
   }
 

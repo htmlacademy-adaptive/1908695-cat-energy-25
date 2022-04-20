@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: auto 1fr 24px;
   align-items: center;
+  justify-items: center;
   min-width: 280px;
   min-height: 65px;
 }
@@ -30,7 +31,7 @@
 
 .main-header__logo-img {
   display: block;
-  margin: 0 auto;
+  text-align: center;
 }
 
 @media all  and (min-width: $middle-size) {

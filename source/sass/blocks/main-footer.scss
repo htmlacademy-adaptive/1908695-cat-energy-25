@@ -31,6 +31,7 @@
 @media all and (min-width: $middle-size) {
   .main-footer__bottom-container {
     @include flex(row, center, space-between, nowrap);
+    height: 147px;
   }
 
   .main-footer__logo,
@@ -44,6 +45,10 @@
 
   .main-footer__copyright {
     justify-content: flex-end;
+  }
+
+  .copyright__title-link {
+    margin-right: 22px;
   }
 }
 
@@ -62,6 +67,7 @@
   .main-footer__map {
     grid-column: -1/1;
     grid-row: 1/4;
+    height: 402px;
   }
 
   .main-footer__contacts {
