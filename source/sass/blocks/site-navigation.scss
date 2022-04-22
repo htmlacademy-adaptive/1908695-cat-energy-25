@@ -77,6 +77,10 @@
     margin-right: 33px;
   }
 
+  .site-navigation__item--summary {
+    margin-right: 0;
+  }
+
   .site-navigation__item--active {
     color: rgba(255, 255, 255, 0.1);
     border-bottom: 2px solid $common-color;

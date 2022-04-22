@@ -51,6 +51,10 @@
   .copyright__title-link {
     margin-right: 22px;
   }
+
+  .main-footer__map {
+    height: 400px;
+  }
 }
 
 @media all and (min-width: $large-size) {
@@ -68,7 +72,6 @@
   .main-footer__map {
     grid-column: -1/1;
     grid-row: 1/4;
-    height: 402px;
   }
 
   .main-footer__contacts {
