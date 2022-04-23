@@ -45,8 +45,9 @@
   margin-bottom: 29px;
 }
 
-.promo__image {
-  min-height: 270px;
+.promo__image-wrapper {
+  height: 270px;
+  width: 280px;
 }
 
 .promo__button {
@@ -86,7 +87,13 @@
     text-align: left;
   }
 
-  .promo__image {
+  .promo__image,
+  .promo__image-wrapper {
+    width: 709px;
+    height: 609px;
+  }
+
+  .promo__image-wrapper {
     grid-row: 3/4;
     grid-column: 1/-1;
     justify-self: center;
@@ -104,27 +111,39 @@
 @media all and (min-width: $large-size) {
   .promo__container {
     grid-template-columns: 91px 1129px;
-    grid-template-rows: 110px repeat(3, auto);
+    grid-template-rows: 110px min-content min-content min-content;
   }
 
   .promo__title {
     grid-row: 2/3;
+    align-self: start;
+    margin: 0;
   }
 
   .promo__description {
     grid-row: 3/4;
+    align-self: start;
+    margin: -50px 0 0 0;
   }
 
-  .promo__image {
+  .promo__image,
+  .promo__image-wrapper {
+    height: 499px;
+    width: 552px;
+  }
+
+  .promo__image-wrapper {
     grid-row: 1/5;
     grid-column: 1/-1;
     justify-self: center;
     z-index: 0;
-    min-height: 500px;
+    margin-left: 200px;
   }
 
   .promo__button {
     grid-row: 4/5;
+    align-self: start;
+    margin-top: -80px;
   }
 
   .promo::before {

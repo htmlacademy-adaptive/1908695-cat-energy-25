@@ -39,6 +39,10 @@
     left: -65px;
     width: 30px;
   }
+
+  .catalog-additional__promo-wrapper {
+    margin: 70px 0;
+  }
 }
 
 @media all and (min-width: $large-size) {
@@ -54,6 +58,7 @@
     grid-template-columns: 1fr min-content;
     grid-template-rows: auto auto;
     column-gap: 80px;
+    margin-bottom: 20px;
   }
 
   .catalog-additional__tille {
@@ -72,5 +77,10 @@
     grid-column: 2/3;
     grid-template-rows: 2/3;
     align-self: center;
+  }
+
+  .promo-action__img,
+  .catalog-additional__promo-wrapper {
+    width: 245px;
   }
 }

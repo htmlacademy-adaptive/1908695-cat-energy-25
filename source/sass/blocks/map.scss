@@ -3,3 +3,9 @@
   border: none;
   height: 100%;
 }
+
+@media all and (min-width: $large-size) {
+  .map--catalog {
+    display: none;
+  }
+}

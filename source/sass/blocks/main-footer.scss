@@ -15,6 +15,7 @@
 .main-footer__logo {
   display: flex;
   min-height: 100px;
+  justify-content: center;
 }
 
 .main-footer__social {
@@ -78,5 +79,12 @@
     grid-column: 2/3;
     grid-row: 2/3;
     z-index: 1;
+  }
+
+  .main-footer--catalog {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 480px 1fr;
+    background: linear-gradient(to bottom, $common-color 0, $common-color 480px, $accent-color 480px);
   }
 }

@@ -51,8 +51,13 @@
     justify-content: start;
   }
 
-  .main-header__logo + .main-header__logo {
-    margin-left: 10px;
+  .main-header__logo-letters {
+    display: none;
+  }
+
+  .main-header__logo-img {
+    width: 174px;
+    height: 52px;
   }
 
   .main-header__container-logo::after {
@@ -61,7 +66,9 @@
 }
 
 @media all and (min-width: $large-size) {
-  .main-header__logo + .main-header__logo {
+  .main-header__logo-img {
+    width: 202px;
+    height: 59px;
     margin-right: 540px;
   }
 
