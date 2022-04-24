@@ -14,19 +14,24 @@
   .main-navigation__toggle {
     display: none;
     position: absolute;
-    min-height: 26px;
-    width: 24px;
-    top: -57px;
+    min-height: 23px;
+    width: 30px;
+    top: -43px;
     right: 15px;
     border: none;
     border-bottom: 2.5px solid $basic-font-color-three;
     background-color: transparent;
     cursor: pointer;
+
+    &:focus {
+      outline: 2px solid red;
+      outline-offset: 7px;
+    }
   }
 
   .main-navigation__toggle::before {
     position: absolute;
-    top: 33px;
+    top: 12px;
     left: 0;
     display: block;
     width: 100%;
@@ -38,7 +43,7 @@
 
   .main-navigation__toggle::after {
     position: absolute;
-    bottom: 7px;
+    bottom: 17px;
     left: 0;
     display: block;
     width: 100%;
@@ -71,7 +76,14 @@
 
   .main-navigation--opened .main-navigation__toggle {
     display: block;
+    min-height: 46px;
+    width: 30px;
+    top: -57px;
     border-color: transparent;
+
+    &:focus {
+      outline-offset: 1px;
+    }
   }
 
   .main-navigation--opened .main-navigation__toggle::before {

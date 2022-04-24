@@ -16,13 +16,18 @@
   padding: 22px 0 24px 0;
   text-decoration: none;
   color: inherit;
+  border: 2px solid transparent;
 
   &:hover {
     opacity: 0.6;
   }
 
-  &:focus {
+  &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $basic-font-color;
   }
 }
 
@@ -73,6 +78,12 @@
     color: $common-color;
   }
 
+  .site-navigation__link {
+    &:focus {
+      outline: 2px solid $common-color;
+    }
+  }
+
   .site-navigation__item {
     margin-right: 33px;
   }
@@ -89,4 +100,5 @@
   .site-navigation__item--inner-pages {
     color: $basic-font-color-three;
   }
+
 }
