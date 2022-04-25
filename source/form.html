@@ -7,6 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
 
@@ -14,9 +18,11 @@
   <div class="main-header__container container">
     <div class="main-header__container-logo">
       <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-img" src="img/content-images/mobile/header-logo-mobile.svg" height="38" width="34"
-            alt="Перейти на главную страницу Кэт Энерджи"></a>
-      <a class="main-header__logo logo-letters" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/content-images/desktop/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/content-images/tablet/logo-tablet.svg">
+          <img class="main-header__logo-img" src="img/content-images/mobile/header-logo-mobile.svg" alt="Перейти на главную страницу Кэт Энерджи" height="38" width="34"></picture></a>
+      <a class="main-header__logo-letters logo-letters" href="index.html">
         <img class="logo-letters__img" src="img/content-images/logo-letters.svg"
               alt="Перейти на главную страницу Кэт Энерджи"></a>
     </div>

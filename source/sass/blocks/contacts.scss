@@ -78,4 +78,8 @@
 
     @include flex(column, flex-start, space-between, nowrap);
   }
+
+  .contacts--catalog {
+    display: none;
+  }
 }

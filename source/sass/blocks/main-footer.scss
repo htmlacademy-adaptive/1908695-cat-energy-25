@@ -15,6 +15,7 @@
 .main-footer__logo {
   display: flex;
   min-height: 100px;
+  justify-content: center;
 }
 
 .main-footer__social {
@@ -51,6 +52,10 @@
   .copyright__title-link {
     margin-right: 22px;
   }
+
+  .main-footer__map {
+    height: 400px;
+  }
 }
 
 @media all and (min-width: $large-size) {
@@ -68,12 +73,18 @@
   .main-footer__map {
     grid-column: -1/1;
     grid-row: 1/4;
-    height: 402px;
   }
 
   .main-footer__contacts {
     grid-column: 2/3;
     grid-row: 2/3;
     z-index: 1;
+  }
+
+  .main-footer--catalog {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 480px 1fr;
+    background: linear-gradient(to bottom, $common-color 0, $common-color 480px, $accent-color 480px);
   }
 }

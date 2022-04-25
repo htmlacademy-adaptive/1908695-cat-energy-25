@@ -143,6 +143,12 @@
     width: 60px;
   }
 
+  .basic-item__img {
+    width: 168px;
+    height: 200px;
+    margin-bottom: 34px;
+  }
+
   .basic-item__description {
     row-gap: 7px;
   }
@@ -186,5 +192,9 @@
   .basic-item__container-modified::before,
   .basic-item__container-modified::after {
     left: 30%;
+  }
+
+  .basic-item__img {
+    margin-bottom: 46px;
   }
 }

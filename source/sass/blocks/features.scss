@@ -31,6 +31,7 @@
     grid-template-columns: repeat(auto-fill, 250px);
     column-gap: 150px;
     row-gap: 70px;
+    counter-reset: list-counter;
   }
 
   .features__title {
@@ -46,6 +47,7 @@
     min-height: 230px;
     row-gap: 30px;
     margin-bottom: 0;
+    counter-increment: list-counter;
   }
 
   .features__list-item::before {
@@ -56,7 +58,7 @@
 
   .features__list-item::after {
     position: absolute;
-    content: "";
+    content: counter(list-counter);
     top: -40px;
     right: 20px;
     font-family: "Oswald", "Arial", sans-serif;
@@ -66,22 +68,6 @@
     line-height: 280px;
     color: $accent-color;
     z-index: -1;
-  }
-
-  .features__list-item--first::after {
-    content: "1";
-  }
-
-  .features__list-item--second::after {
-    content: "2";
-  }
-
-  .features__list-item--third::after {
-    content: "3";
-  }
-
-  .features__list-item--fourth::after {
-    content: "4";
   }
 }
 
