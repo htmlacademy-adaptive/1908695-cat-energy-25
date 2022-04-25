@@ -33,6 +33,7 @@
 
 .site-navigation__item {
   position: relative;
+  width: 100%;
   border-bottom: 2px solid transparent;
   text-align: center;
 }
@@ -48,6 +49,10 @@
   background-color: rgba(230, 230, 230, 1);
 }
 
+.site-navigation__item:last-child::after {
+  display: none;
+}
+
 @media all and (min-width: 768px) {
   .site-navigation {
     display: flex;
@@ -61,6 +66,10 @@
   .site-navigation__item--active,
   .site-navigation__item--active-inner {
     border-bottom: 2px solid $basic-color;
+  }
+
+  .site-navigation__item {
+    width: auto;
   }
 
   .site-navigation__item::after {
@@ -100,5 +109,4 @@
   .site-navigation__item--inner-pages {
     color: $basic-font-color-three;
   }
-
 }
