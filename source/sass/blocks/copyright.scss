@@ -1,12 +1,30 @@
 .copyright__title-link {
   color: inherit;
   text-decoration: none;
+  border: 2px solid transparent;
 
   &:hover {
     opacity: 0.6;
   }
 
-  &:focus {
+  &:active {
     opacity: 0.3;
   }
+
+  &:focus {
+      outline: 2px solid $basic-font-color;
+  }
+}
+
+.copyright__logo-link {
+  padding-top: 7px;
+  border: 2px solid transparent;
+
+  &:focus {
+    outline: 2px solid $basic-font-color;
+  }
+}
+
+.copyright__icon {
+  @include status();
 }

@@ -3,6 +3,28 @@
 }
 
 .social__item {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 22px;
+  margin-right: 24px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: inline-block;
+  width: 100%;
+}
+
+.social__icon {
+  @include status();
+  display: inline-block;
+  width: 100%;
+}
+
+.social__icon-telegram {
+  position: relative;
+  top: 2px;
+  left:2px
 }
