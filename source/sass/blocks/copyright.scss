@@ -4,7 +4,7 @@
   border: 2px solid transparent;
 
   &:hover {
-    opacity: 0.6;
+    opacity: 1;
   }
 
   &:active {
@@ -12,19 +12,24 @@
   }
 
   &:focus {
-      outline: 2px solid $basic-font-color;
+    @include dark-focus();
   }
 }
 
 .copyright__logo-link {
+  fill: rgba(102, 102, 102, 1);
   padding-top: 7px;
   border: 2px solid transparent;
 
-  &:focus {
-    outline: 2px solid $basic-font-color;
+  &:hover {
+    fill: $basic-color;
   }
-}
 
-.copyright__icon {
-  @include status();
+  &:active {
+    fill: rgba(104, 183, 56, 0.6);
+  }
+
+  &:focus {
+    @include dark-focus();
+  }
 }

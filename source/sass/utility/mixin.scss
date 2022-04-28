@@ -24,14 +24,6 @@
   align-items: $align-items;
 }
 
-@mixin status {
-  fill:rgba(102, 102, 102, 1);
-
-  &:hover {
-    fill: $basic-color;
-  }
-
-  &:active {
-    fill:rgba(104, 183, 56, 0.6);
-  }
+@mixin dark-focus {
+  outline: 2px solid $basic-font-color;
 }

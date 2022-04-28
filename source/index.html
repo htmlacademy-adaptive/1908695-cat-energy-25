@@ -55,6 +55,13 @@
       <p class="promo__description">Занялся собой? Займись котом!</p>
       <div class="promo__image-wrapper">
         <picture>
+          <source type="image/webp" media="(min-width:1440px)"
+                  srcset="img/content-images/desktop/promo-desktop.webp 1x, img/content-images/desktop/promo-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width:768px)"
+                  srcset="img/content-images/tablet/promo-tablet.webp 1x, img/content-images/tablet/promo-tablet@2x.webp 2x">
+          <source type="image/webp"
+                  srcset="img/content-images/mobile/promo-mobile.webp 1x, img/content-images/mobile/promo-mobile@2x.webp 2x">
+
           <source media="(min-width:1440px)"
                   srcset="img/content-images/desktop/promo-desktop.png 1x, img/content-images/desktop/promo-desktop@2x.png 2x">
           <source media="(min-width:768px)"
@@ -72,7 +79,7 @@
         <h3 class="service__list-title service__list-title--type-one">похудение</h3>
         <p class="service__list-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="service__button button button--secondary" href="#">каталог slim
-          <svg class="service-button__icon" width="24" height="12">
+          <svg class="service__button-icon" width="24" height="12">
             <use xlink:href="img/sprite.svg#button-arrow"></use>
           </svg>
         </a>
@@ -81,7 +88,7 @@
         <h3 class="service__list-title service__list-title--type-two">набор массы</h3>
         <p class="service__list-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="service__button button button--secondary" href="#">каталог pro
-          <svg class="service-button__icon" width="24" height="12">
+          <svg class="service__button-icon" width="24" height="12">
             <use xlink:href="img/sprite.svg#button-arrow"></use>
           </svg></a>
       </li>
@@ -120,6 +127,9 @@
       </dl>
       <div class="illustration__image-range-container">
         <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/content-images/tablet/before-after-tablet.webp 1x, img/content-images/tablet/before-after-tablet@2x.webp 2x">
+          <source type="image/webp"  srcset="img/content-images/mobile/before-mobile.webp 1x, img/content-images/mobile/before-mobile@2x.webp 2x">
+
           <source media="(min-width: 768px)" srcset="img/content-images/tablet/before-after-tablet.png 1x, img/content-images/tablet/before-after-tablet@2x.png 2x">
           <img class="illustration__image" src="img/content-images/mobile/before-mobile.png"
                 srcset="img/content-images/mobile/before-mobile@2x.png 2x"
@@ -160,7 +170,7 @@
       <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
-              <svg class="social__icon social__icon-vk" width="28px" height="22px" aria-hidden="true" focusable="false">
+              <svg class="social__icon social__icon-vk" width="30px" height="24px" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
               <span class="visually-hidden">ссылка на профиль вконтакте</span>
@@ -168,7 +178,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" target="_blank">
-              <svg class="social__icon social__icon-youtube" width="28px" height="22px" aria-hidden="true" focusable="false">
+              <svg class="social__icon social__icon-youtube" width="30px" height="24px" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
               <span class="visually-hidden">ссылка на профиль  в ютьюб</span>
@@ -176,7 +186,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/s/htmlacademy" target="_blank">
-              <svg class="social__icon social__icon-telegram" width="28px" height="22px" aria-hidden="true" focusable="false">
+              <svg class="social__icon social__icon-telegram" width="30px" height="24px" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-telegram"></use>
               </svg>
               <span class="visually-hidden">ссылка на профиль в телеграм</span>
@@ -189,7 +199,7 @@
           <span class="visually-hidden">ссылка на страницу курса Адаптивная верстка и автоматизация в HTML Academy</span>
         </a>
         <a  class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <svg class="copyright__icon copyright__icon-htmlacademy"  width="27" height="34">
+          <svg class="copyright__icon copyright__icon-htmlacademy"  width="27" height="34" aria-hidden="true" focusable="false">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
           <span class="visually-hidden">ссылка на страницу курса Адаптивная верстка и автоматизация в HTML Academy</span>

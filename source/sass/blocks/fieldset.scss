@@ -121,6 +121,7 @@
 }
 
 .fieldset__label--contacts-gap {
+  position: relative;
   column-gap: 10px;
 }
 
@@ -162,8 +163,42 @@
   }
 }
 
+.fieldset__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 15px;
+}
+
+.fieldset__icon--envelope {
+  stroke: #222222;
+}
+
+.fieldset__icon--phone {
+  fill: #222222;
+}
+
+.fieldset__input:focus + .fieldset__icon--phone {
+  fill: rgba(104, 183, 56, 1);
+}
+
+.fieldset__input:focus + .fieldset__icon--envelope {
+  stroke: rgba(104, 183, 56, 1);
+}
+
+
 .fieldset__input--error {
   border: 2px solid rgba(255, 130, 130, 1);
+}
+
+.fieldset__input--error + .fieldset__icon--phone {
+  fill: rgba(255, 130, 130, 1);
+}
+
+.fieldset__input--error + .fieldset__icon--envelope {
+  stroke: rgba(255, 130, 130, 1);
 }
 
 .fieldset__input::placeholder {
@@ -253,6 +288,10 @@
   .fieldset__label-field--checkbox {
     padding-left: 55px;
   }
+
+  .fieldset__label--contacts-gap {
+    margin-bottom: 20px;
+  }
 }
 
 @media all and (min-width: $large-size) {
@@ -279,5 +318,9 @@
 
   .fieldset__input--message {
     margin: 70px 0;
+  }
+
+  .fieldset__label--contacts-gap {
+    margin-bottom: 0;
   }
 }

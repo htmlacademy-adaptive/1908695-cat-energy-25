@@ -1,11 +1,21 @@
 .logo-letters__img {
   display: block;
+  border: 2px solid transparent;
+}
 
-  &:hover {
-    opacity: 0.6;
-  }
+.logo-letters:hover .logo-letters__img {
+  opacity: 0.6;
+  cursor: pointer;
+}
 
-  &:focus {
-    opacity: 0.3;
-  }
+.logo-letters:active .logo-letters__img {
+  opacity: 0.3;
+}
+
+.logo-letters:focus .logo-letters__img {
+  @include dark-focus();
+}
+
+.logo-letters:focus {
+  outline: none;
 }
