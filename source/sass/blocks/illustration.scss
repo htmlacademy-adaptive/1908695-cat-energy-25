@@ -160,11 +160,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  //.illustration__image {
-  //  width: 592px;
-  //  height: 511px;
-  //}
 }
 
 @media all and (min-width: $large-size) {
@@ -198,7 +193,7 @@
   }
 
   .illustration__data-title {
-    background-color: $accent-color;
+    background-color: rgba(234, 234, 234, 1);
   }
 
   .illustration__data-container-modified {

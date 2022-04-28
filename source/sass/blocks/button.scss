@@ -17,7 +17,6 @@
   }
 
   &:focus {
-    border: 2px solid transparent;
     outline: 2px solid $basic-font-color;
   }
 }
@@ -35,7 +34,6 @@
   background-color: transparent;
 
   &:hover {
-    opacity: 0.6;
     background-color: transparent;
   }
 

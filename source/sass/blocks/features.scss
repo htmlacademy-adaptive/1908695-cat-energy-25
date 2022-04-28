@@ -19,6 +19,24 @@
   width: 60px;
   height: 60px;
   background-color: $basic-color;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.features__list-item--first::before {
+  background-image: url("../img/decorative-images/mobile/features-list-item-first.svg");
+}
+
+.features__list-item--second::before {
+  background-image: url("../img/decorative-images/mobile/features-list-item-second.svg");
+}
+
+.features__list-item--third::before {
+  background-image: url("../img/decorative-images/mobile/features-list-item-third.svg");
+}
+
+.features__list-item--fourth::before {
+  background-image: url("../img/decorative-images/mobile/features-list-item-fourth.svg");
 }
 
 .features__list-item--summary {
@@ -53,7 +71,6 @@
   .features__list-item::before {
     width: 80px;
     height: 80px;
-    background-color: $basic-color;
   }
 
   .features__list-item::after {

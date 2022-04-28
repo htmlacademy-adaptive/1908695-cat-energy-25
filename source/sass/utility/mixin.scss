@@ -23,3 +23,7 @@
   column-gap: $column-gap;
   align-items: $align-items;
 }
+
+@mixin dark-focus {
+  outline: 2px solid $basic-font-color;
+}

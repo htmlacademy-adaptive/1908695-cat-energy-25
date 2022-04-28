@@ -27,7 +27,7 @@
   }
 
   &:focus {
-    outline: 2px solid $basic-font-color;
+    @include dark-focus();
   }
 }
 
@@ -102,11 +102,15 @@
   }
 
   .site-navigation__item--active {
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 1);
     border-bottom: 2px solid $common-color;
   }
 
   .site-navigation__item--inner-pages {
     color: $basic-font-color-three;
+  }
+
+  .site-navigation__item--inner-pages .site-navigation__link:focus {
+    @include dark-focus();
   }
 }

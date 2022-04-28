@@ -21,6 +21,7 @@
 .main-footer__social {
   @include flex(row, center, center, nowrap);
   min-height: 63px;
+  max-width: 100%;
 }
 
 .main-footer__copyright {
