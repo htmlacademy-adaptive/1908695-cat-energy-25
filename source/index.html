@@ -129,18 +129,19 @@
         <picture>
           <source type="image/webp" media="(min-width: 768px)" srcset="img/content-images/tablet/before-after-tablet.webp 1x, img/content-images/tablet/before-after-tablet@2x.webp 2x">
           <source type="image/webp"  srcset="img/content-images/mobile/before-mobile.webp 1x, img/content-images/mobile/before-mobile@2x.webp 2x">
-
           <source media="(min-width: 768px)" srcset="img/content-images/tablet/before-after-tablet.png 1x, img/content-images/tablet/before-after-tablet@2x.png 2x">
           <img class="illustration__image" src="img/content-images/mobile/before-mobile.png"
                 srcset="img/content-images/mobile/before-mobile@2x.png 2x"
                 alt="фотография кота до старта программы по снижению веса">
         </picture>
         <div class="illustration__range-bar">
+          <span class="illustration__range-label">было</span>
           <label class="illustration__label">
-            <span class="illustration__range-label">было</span>
-            <input class="illustration__range-input" type="range" min="0" max="100" value="50">
-            <span class="illustration__range-label">стало</span>
+            <input class="illustration__range-input visually-hidden" type="button">
+            <span class="illustration__custom"></span>
           </label>
+          <span class="illustration__range-label">стало</span>
+
         </div>
       </div>
     </div>

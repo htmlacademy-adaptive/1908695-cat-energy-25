@@ -262,7 +262,7 @@
   .fieldset-title--modified::after {
     top: 60%;
     left: 105%;
-    width: 300%;
+    width: 1000%;
   }
 
   .fieldset__label-custom,
@@ -322,5 +322,9 @@
 
   .fieldset__label--contacts-gap {
     margin-bottom: 0;
+  }
+
+  .fieldset-br {
+    display: none;
   }
 }
