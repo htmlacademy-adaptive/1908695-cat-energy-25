@@ -44,12 +44,12 @@
 
 @media all  and (min-width: $middle-size) {
   .main-header__container {
-    position: fixed;
     width: 100%;
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     min-height: 100px;
+    margin-bottom: 25px;
     z-index: 5;
     background-color: $common-color;
   }
@@ -81,7 +81,16 @@
   }
 
   .main-header__container {
-    position: static;
+    align-items: end;
     background-color: transparent;
+    padding-top: 25px;
+  }
+
+  .main-header__container-logo {
+    margin-right: -5px;
+  }
+
+  .main-header__logo {
+    margin-top: 20px;
   }
 }

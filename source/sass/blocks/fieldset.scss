@@ -292,6 +292,10 @@
   .fieldset__label--contacts-gap {
     margin-bottom: 20px;
   }
+
+  .fieldset-br {
+    display: none;
+  }
 }
 
 @media all and (min-width: $large-size) {
@@ -324,7 +328,4 @@
     margin-bottom: 0;
   }
 
-  .fieldset-br {
-    display: none;
-  }
 }

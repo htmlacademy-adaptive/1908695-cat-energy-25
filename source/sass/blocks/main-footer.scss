@@ -2,6 +2,10 @@
   background-color: $accent-color;
 }
 
+.main-footer__map {
+  height: 362px;
+}
+
 .main-footer__bottom-container {
   @include flex(column, center, space-between, nowrap);
 }

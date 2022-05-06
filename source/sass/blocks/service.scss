@@ -66,7 +66,7 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 23px;
+  padding-bottom: 18px;
   border-bottom: 1px solid $common-color-two;
 }
 
@@ -83,7 +83,7 @@
   grid-template-columns: auto min-content;
   align-items: center;
   justify-content: start;
-  column-gap: 25px;
+  column-gap: 15px;
 
   &:hover {
     color: rgba(0, 0, 0, 1);
@@ -104,12 +104,17 @@
 }
 
 @media all and (min-width: 768px) {
+  .service__list {
+    margin-bottom: 50px;
+  }
+
   .service__list-item {
     display: grid;
     grid-template-columns: 340px 1fr;
     grid-template-rows: repeat(3, auto);
-    column-gap: 54px;
+    column-gap: 20px;
     padding: 77px 25px 50px 52px;
+    margin-bottom: 45px;
   }
 
   .service__list-item::after {

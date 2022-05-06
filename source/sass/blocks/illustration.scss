@@ -17,6 +17,7 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .illustration__data-container {
@@ -82,6 +83,10 @@
   background-color: rgba(234, 234, 234, 1);
 }
 
+.illustration__image {
+  margin-bottom: 12px;
+}
+
 .illustration__image-range-container {
   text-align: center;
 }
@@ -129,12 +134,23 @@
   .illustration {
     background: linear-gradient(to top, rgba(234, 234, 234, 1) 0%, rgba(234, 234, 234, 1) 0% 450px, $common-color 450px);
     padding-bottom: 0;
+    padding-top: 43px;
+    border-top: 1px solid $border-decoration-color;
+  }
+
+  .illustration__description {
+    margin-bottom: 60px;
+  }
+
+  .illustration__title {
+    margin-bottom: 65px;
   }
 
   .illustration__data {
     grid-template-columns: auto auto 1fr;
     column-gap: 42px;
     align-items: center;
+    margin-bottom: 55px;
   }
 
   .illustration__data-container {
@@ -188,6 +204,10 @@
   .illustration__image-range-container {
     text-align: center;
     min-height: 632px;
+  }
+
+  .illustration__image {
+    margin-bottom: 30px;
   }
 
   .illustration__range-label {
@@ -262,8 +282,9 @@
 
 @media all and (min-width: $large-size) {
   .illustration {
-    background: linear-gradient(to top, rgba(234, 234, 234, 1) 0%, rgba(234, 234, 234, 1) 0% 425px, $common-color 425px);
+    background: linear-gradient(to top, rgba(234, 234, 234, 1) 0%, rgba(234, 234, 234, 1) 0% 460px, $common-color 460px);
     padding-bottom: 40px;
+    border-top: transparent;
   }
 
   .illustration__container {
@@ -271,13 +292,13 @@
     grid-template-columns: 1fr 591px;
     grid-template-rows: repeat(3, auto);
     column-gap: 193px;
-    row-gap: 70px;
+    margin-bottom: 30px;
   }
 
   .illustration__title {
     grid-column: 1/2;
     margin-top: 0;
-    margin-bottom: 76px;
+    margin-bottom: 100px;
   }
 
   .illustration__description {
@@ -289,16 +310,24 @@
     grid-template-columns: auto auto;
     grid-column: 1/2;
     margin: 0;
+    column-gap: 0;
   }
 
   .illustration__data-title {
     background-color: rgba(234, 234, 234, 1);
   }
 
+  .illustration__data-container {
+    justify-self: start;
+    align-self: end;
+  }
+
   .illustration__data-container-modified {
     grid-column: -1/1;
-    justify-self: center;
+    justify-self: start;
+    align-self: end;
     flex-direction: row;
+    margin-left: 20px;
   }
 
   .illustration__data-title-common {
@@ -312,5 +341,10 @@
     align-self: center;
     min-height: auto;
     background: transparent;
+    margin-top: -40px;
+  }
+
+  .illustration__image {
+    margin-bottom: 20px;
   }
 }

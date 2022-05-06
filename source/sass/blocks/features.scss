@@ -47,8 +47,8 @@
   .features__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
-    column-gap: 150px;
-    row-gap: 70px;
+    column-gap: 130px;
+    row-gap: 90px;
     counter-reset: list-counter;
   }
 
@@ -89,8 +89,12 @@
 }
 
 @media all and (min-width: $large-size) {
+  .features__title {
+    margin-bottom: 22px;
+  }
+
   .features__list {
-    column-gap: 70px;
+    column-gap: 73px;
     row-gap: 0;
     padding: 47px 0 26px 0;
   }
