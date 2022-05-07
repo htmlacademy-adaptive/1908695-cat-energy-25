@@ -22,7 +22,7 @@
   align-items: center;
   justify-items: center;
   min-width: 280px;
-  min-height: 75px;
+  min-height: 70px;
 }
 
 .main-header__container-logo::after {
@@ -40,6 +40,10 @@
 .main-header__logo-img {
   display: block;
   text-align: center;
+}
+
+.main-header__logo-letters {
+  padding-right: 15px;
 }
 
 @media all  and (min-width: $middle-size) {

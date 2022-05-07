@@ -1,8 +1,8 @@
 .main-catalog__title {
   position: relative;
-  margin-top: 27px;
+  margin-top: 20px;
   margin-bottom: 41px;
-  text-align: center;
+  text-align: left;
 }
 
 .main-catalog__title::after {
@@ -18,7 +18,7 @@
 
 @media all and (min-width: $middle-size) {
   .main-catalog__title {
-    margin-top: 63px;
+    margin-top: 15px;
     margin-bottom: 78px;
     text-align: left;
   }
@@ -31,5 +31,10 @@
 @media all and (min-width: $large-size) {
   .main-catalog {
     padding-top: 0;
+  }
+
+  .main-catalog__title {
+    margin-top: 55px;
+    margin-bottom: 92px;
   }
 }

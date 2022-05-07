@@ -5,18 +5,18 @@
 
 .main-form__title {
   margin-top: 0;
-  margin-bottom: 37px;
+  margin-bottom: 33px;
 }
 
 .main-form__description {
   margin-top: 0;
-  margin-bottom: 19px;
+  margin-bottom: 9px;
   font-size: 14px;
   text-transform: uppercase;
 }
 
 .main-form__container {
-  padding: 27px 20px 32px 20px;
+  padding: 23px 20px 25px 20px;
 }
 
 @media all and (min-width: $middle-size) {
@@ -25,13 +25,13 @@
   }
 
   .main-form__title {
-    margin-top: 50px;
+    margin-top: 18px;
     margin-bottom: 54px;
   }
 
   .main-form__description {
-    max-width: 270px;
-    margin-bottom: 40px;
+    max-width: 500px;
+    margin-bottom: 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -47,7 +47,6 @@
   }
 
   .main-form__description {
-    max-width: 270px;
     margin-bottom: 0;
   }
 }

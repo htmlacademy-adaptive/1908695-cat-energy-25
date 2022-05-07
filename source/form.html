@@ -23,10 +23,10 @@
           <source media="(min-width: 768px)" srcset="img/content-images/tablet/logo-tablet.svg">
           <img class="main-header__logo-img" src="img/content-images/mobile/header-logo-mobile.svg" alt="Перейти на главную страницу Кэт Энерджи" height="38" width="34"></picture></a>
       <a class="main-header__logo-letters logo-letters" href="index.html">
-        <img class="logo-letters__img" src="img/content-images/logo-letters.svg"
+        <img class="logo-letters__img" src="img/content-images/logo-letters.svg" width="101" height="18"
               alt="Перейти на главную страницу Кэт Энерджи"></a>
     </div>
-    <nav class="main-navigation main-navigation--nojs">
+    <nav class="main-navigation main-navigation--closed">
       <button class="main-navigation__toggle" type="button" aria-label="открыть меню"></button>
       <ul class="main-navigation__list site-navigation">
         <li class="site-navigation__item site-navigation__item--inner-pages">
@@ -46,7 +46,7 @@
 <main class="main-form">
   <div class="main-form__container container">
     <h1 class="main-form__title section-title section-title--basic">Подбор программы</h1>
-    <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <p class="main-form__description">Заполните анкету, и мы подберем <br class="main-form__description-br"> программу питания для вашего кота</p>
     <form class="main-form__program-choice program-form" method="post" action="https://echo.htmlacademy.ru/">
       <div class="program-form__container">
         <fieldset class="program-form__fieldset fieldset fieldset--style-one">
@@ -59,22 +59,22 @@
             <input class="fieldset__input" type="text" name="cat-weight" placeholder="7">
           </label>
           <label class="fieldset__label fieldset__label--summary">
-            <span class="fieldset__label-field">Возраст (лет):</span>
+            <span class="fieldset__label-field"><nobr>Возраст (лет):</nobr></span>
             <input class="fieldset__input" type="text" name="cat-age" placeholder="7">
           </label>
         </fieldset>
         <fieldset class="program-form__fieldset fieldset fieldset--style-two">
-          <label class="fieldset__label">
+          <label class="fieldset__label fieldset__label--radio">
             <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="program-type" value="slim" checked>
             <span class="fieldset__label-custom"></span>
             <span class="fieldset__label-field fieldset__label-field--radio">похудение</span>
           </label>
-          <label class="fieldset__label">
+          <label class="fieldset__label fieldset__label--radio">
             <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="program-type" value="weight-gain">
             <span class="fieldset__label-custom"></span>
             <span class="fieldset__label-field fieldset__label-field--radio">Набор массы</span>
           </label>
-          <label class="fieldset__label  fieldset__label--summary">
+          <label class="fieldset__label  fieldset__label--radio fieldset__label--summary">
             <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="program-type" value="advice">
             <span class="fieldset__label-custom"></span>
             <span class="fieldset__label-field fieldset__label-field--radio">Не знаю (Нужен ваш совет)</span>
@@ -103,7 +103,7 @@
       <fieldset class="program-form__fieldset fieldset fieldset--style-one">
         <legend class="fieldset-title section-title section-title--small section-title--basic">Комментарий</legend>
         <label class="fieldset__label fieldset__label--message">
-          <textarea class="fieldset__input fieldset__input--message" name="message" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <textarea class="fieldset__input fieldset__input--message" name="message" cols="30" rows="7" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </label>
       </fieldset>
       <fieldset class="program-form__fieldset fieldset fieldset--style-one">
@@ -141,7 +141,7 @@
   <section class="main-footer__contacts contacts contacts--inner-pages contacts--small">
     <div class="contacts__container">
       <h2 class="visually-hidden">наш адрес</h2>
-      <p class="contacts__description">приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__description">приглашаем <br class="contacts__description-br"> <nobr>к сотрудничеству</nobr> дилеров!</p>
       <address class="contacts__address">ул. Большая
         <nobr>Конюшенная,&nbsp; д.&nbsp19/8</nobr>
         Санкт-Петербург

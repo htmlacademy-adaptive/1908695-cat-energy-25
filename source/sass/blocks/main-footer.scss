@@ -24,12 +24,12 @@
 
 .main-footer__social {
   @include flex(row, center, center, nowrap);
-  min-height: 63px;
+  min-height: 55px;
   max-width: 100%;
 }
 
 .main-footer__copyright {
-  min-height: 78px;
+  min-height: 70px;
   width: 100%;
 
   @include flex(row, center, space-between, nowrap);
@@ -90,6 +90,6 @@
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: 480px 1fr;
-    background: linear-gradient(to bottom, $common-color 0, $common-color 480px, $accent-color 480px);
+    background: linear-gradient(to bottom, $common-color 0, $common-color 475px, $accent-color 475px);
   }
 }

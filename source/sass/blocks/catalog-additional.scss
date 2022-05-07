@@ -1,7 +1,7 @@
 .catalog-additional__tille {
   position: relative;
-  margin-top: 25px;
-  margin-bottom: 36px;
+  margin-top: 30px;
+  margin-bottom: 25px;
   color: $basic-font-color-three;
 }
 
@@ -27,6 +27,7 @@
 @media all and (min-width: $middle-size) {
   .catalog-additional__tille {
     margin-left: 35px;
+    margin-bottom: 68px;
   }
 
   .catalog-additional__tille::after {
@@ -41,7 +42,7 @@
   }
 
   .catalog-additional__promo-wrapper {
-    margin: 70px 0;
+    margin: 70px 0 75px 0;
   }
 }
 
@@ -58,13 +59,14 @@
     grid-template-columns: 1fr min-content;
     grid-template-rows: auto auto;
     column-gap: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .catalog-additional__tille {
     grid-column: 1/-1;
     grid-row: 1/2;
     margin-left: 0;
+    margin-bottom: 77px;
   }
 
   .catalog-additional__list {
