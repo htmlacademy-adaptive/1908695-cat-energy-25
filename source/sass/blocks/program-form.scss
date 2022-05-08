@@ -49,7 +49,18 @@
     grid-template-rows: auto;
     align-items: center;
     column-gap: 80px;
-    margin-bottom: 70px;
-    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-top: 65px;
+  }
+
+  .program-form__button-field {
+    margin-bottom: 75px;
+  }
+
+  .program-form__button {
+    max-width: 568px;
+    width: 568px;
+    height: 52px;
+    max-height: 55px;
   }
 }
