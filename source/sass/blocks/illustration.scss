@@ -124,7 +124,7 @@
   content: "";
   top: 3px;
   left: 3px;
-  width: calc(100%/2 - 4px);
+  width: calc(100% / 2 - 4px);
   height: 8px;
   border-radius: 6px;
   background: $basic-color;
@@ -223,7 +223,7 @@
       right: 0;
       width: 100%;
       height: 2px;
-      background:repeating-linear-gradient(to right, rgba(220, 220, 220, 1) 0, rgba(220, 220, 220, 1) 1px, rgba(234, 234, 234, 1) 1px, rgba(234, 234, 234, 1) 2px);
+      background: repeating-linear-gradient(to right, rgba(220, 220, 220, 1) 0, rgba(220, 220, 220, 1) 1px, rgba(234, 234, 234, 1) 1px, rgba(234, 234, 234, 1) 2px);
     }
   }
 
@@ -254,7 +254,7 @@
     border-radius: 50%;
     border: 1px solid $accent-color;
     background: $common-color;
-    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
   }
 
   .illustration__custom::after {
@@ -272,10 +272,10 @@
   }
 
   .illustration__range-input:hover + .illustration__custom::before {
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
   }
 
-  .illustration__range-input:active  + .illustration__custom::before {
+  .illustration__range-input:active + .illustration__custom::before {
     border-color: $basic-color;
   }
 }
