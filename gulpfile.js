@@ -4,6 +4,14 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
+import del from 'del';
+import squoosh from "gulp-libsquoosh";
+import rename from 'gulp-rename';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import terser from 'gulp-terser';
+import csso from 'postcss-csso';
 
 // Styles
 
