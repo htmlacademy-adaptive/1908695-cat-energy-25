@@ -2,8 +2,15 @@
   background-color: $accent-color;
 }
 
+.main-footer__map {
+  height: 362px;
+}
+
 .main-footer__bottom-container {
   @include flex(column, center, space-between, nowrap);
+
+  width: 100%;
+  padding: 0 20px;
 }
 
 .main-footer__logo,
@@ -20,12 +27,12 @@
 
 .main-footer__social {
   @include flex(row, center, center, nowrap);
-  min-height: 63px;
+  min-height: 55px;
   max-width: 100%;
 }
 
 .main-footer__copyright {
-  min-height: 78px;
+  min-height: 70px;
   width: 100%;
 
   @include flex(row, center, space-between, nowrap);
@@ -35,6 +42,7 @@
   .main-footer__bottom-container {
     @include flex(row, center, space-between, nowrap);
     height: 147px;
+    padding: 0 30px;
   }
 
   .main-footer__logo,
@@ -69,6 +77,7 @@
   .main-footer__bottom-container {
     grid-column: -1/1;
     grid-row: 4/5;
+    padding: 0 110px;
   }
 
   .main-footer__map {
@@ -86,6 +95,6 @@
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: 480px 1fr;
-    background: linear-gradient(to bottom, $common-color 0, $common-color 480px, $accent-color 480px);
+    background: linear-gradient(to bottom, $common-color 0, $common-color 475px, $accent-color 475px);
   }
 }

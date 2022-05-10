@@ -2,7 +2,7 @@
   position: relative;
 
   @include flex(column, stretch, center, nowrap);
-  padding: 25px 20px;
+  padding: 21px 0 20px 0;
 }
 
 .basic-item::after {
@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 77px;
+  padding-top: 60px;
 }
 
 .basic-item__container-modified::before,
@@ -61,6 +61,7 @@
   text-align: center;
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: 20px;
 }
 
 .basic-item__link-img {
@@ -103,12 +104,16 @@
   display: none;
 }
 
+.basic-item__title-br {
+  display: none;
+}
+
 @media all and (min-width: $middle-size) {
   .basic-item {
     padding: 37px;
     justify-content: flex-end;
     height: 511px;
-    background: linear-gradient(to bottom, $common-color 0%, $common-color 110px, $accent-color 110px);
+    background: linear-gradient(to bottom, $common-color 0%, $common-color 87px, $accent-color 87px);
   }
 
   .basic-item__middle-width {
@@ -132,14 +137,14 @@
   }
 
   .basic-item__container-modified {
-    min-height: 230px;
-    justify-content: space-between;
+    min-height: 220px;
+    justify-content: flex-start;
   }
 
   .basic-item__container-modified::before,
   .basic-item__container-modified::after {
-    top: 0;
-    left: 36%;
+    top: -8%;
+    left: 38%;
     width: 60px;
   }
 
@@ -172,21 +177,34 @@
   .basic-item__title {
     font-size: 20px;
     line-height: 24px;
+    padding-bottom: 5px;
   }
 
   .basic-item__purchase {
     margin-top: 26px;
   }
+
+  .basic-item__mobile-width {
+    display: none;
+  }
+
+  .basic-item__title-br {
+    display: block;
+  }
 }
 
 @media all and (min-width: $large-size) {
   .basic-item {
-    padding: 41px;
+    padding: 41px 36px 47px 36px;
     background-color: $accent-color;
   }
 
+  .basic-item--summary {
+    padding: 41px 36px;
+  }
+
   .basic-item__container-modified {
-    padding-top: 110px;
+    padding-top: 55px;
   }
 
   .basic-item__container-modified::before,
@@ -195,6 +213,6 @@
   }
 
   .basic-item__img {
-    margin-bottom: 46px;
+    margin-bottom: 40px;
   }
 }

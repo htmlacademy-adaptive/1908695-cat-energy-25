@@ -1,13 +1,13 @@
 .fieldset {
   margin: 0;
-  padding: 25px 0;
+  padding: 20px 0;
   border: none;
 }
 
 .fieldset-title {
   position: relative;
   line-height: 26px;
-  margin-bottom: 17px;
+  margin-bottom: 8px;
 }
 
 .fieldset-title::after {
@@ -39,7 +39,7 @@
   grid-template-columns: auto 1fr;
   column-gap: 15px;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 }
 
 .fieldset__label-field {
@@ -115,9 +115,12 @@
   padding-left: 48px;
 }
 
-.fieldset__label--summary,
-.fieldset__label--message {
+.fieldset__label--summary {
   margin-bottom: 0;
+}
+
+.fieldset__label--message {
+  margin-bottom: 10px;
 }
 
 .fieldset__label--contacts-gap {
@@ -216,12 +219,21 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     row-gap: 20px;
-    column-gap: 40px;
+    column-gap: 58px;
     align-items: center;
+    padding-top: 11px;
   }
 
   .fieldset__label-container .fieldset__label {
     margin-bottom: 0;
+  }
+
+  .fieldset__label {
+    margin-bottom: 15px;
+  }
+
+  .fieldset__label--radio {
+    margin-bottom: 10px;
   }
 
   .fieldset--style-two::before,
@@ -230,15 +242,15 @@
   }
 
   .fieldset--style-one {
-    margin-bottom: 65px;
+    margin-bottom: 55px;
     padding-bottom: 0;
-    padding-top: 76px;
+    padding-top: 55px;
   }
 
   .fieldset--style-two {
     border: 2px solid rgba(231, 231, 231, 1);
     padding-left: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 67px;
   }
 
   .fieldset-title {
@@ -259,10 +271,18 @@
     left: 115%;
   }
 
+  .fieldset-title--modified {
+    margin-bottom: 18px;
+  }
+
   .fieldset-title--modified::after {
     top: 60%;
     left: 105%;
-    width: 300%;
+    width: 1000%;
+  }
+
+  .fieldset__input {
+    padding: 12px 15px;
   }
 
   .fieldset__label-custom,
@@ -292,14 +312,33 @@
   .fieldset__label--contacts-gap {
     margin-bottom: 20px;
   }
+
+  .fieldset-br {
+    display: none;
+  }
+
+  .fieldset__label,
+  .fieldset__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .fieldset__input--message {
+    height: 174px;
+    margin-top: 12px;
+  }
 }
 
 @media all and (min-width: $large-size) {
   .fieldset__label-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    column-gap: 104px;
-    margin: 57px 0 61px 0;
+    column-gap: 90px;
+    margin: 50px 0 61px 0;
+  }
+
+  .fieldset-title--modified {
+    margin-bottom: 16px;
   }
 
   .fieldset-title::before {
@@ -317,7 +356,7 @@
   }
 
   .fieldset__input--message {
-    margin: 70px 0;
+    margin: 80px 0 60px 0;
   }
 
   .fieldset__label--contacts-gap {

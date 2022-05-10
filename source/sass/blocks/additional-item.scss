@@ -1,5 +1,5 @@
 .additional-item {
-  padding: 20px 0;
+  padding: 15px 0;
   display: grid;
   border-bottom: 1px solid $border-decoration-color;
 }
@@ -35,13 +35,17 @@
     grid-template-rows: auto auto;
     align-items: center;
     row-gap: 10px;
-    padding: 26px 38px;
+    padding: 24px 38px 20px 38px;
     border-left: 1px solid $border-decoration-color;
     border-right: 1px solid $border-decoration-color;
   }
 
   .additional-item__purchase {
     grid-column: 1/-1;
+  }
+
+  .additional-item__title {
+    font-size: 20px;
   }
 }
 

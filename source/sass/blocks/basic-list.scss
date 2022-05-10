@@ -10,6 +10,10 @@
     grid-template-columns: repeat(auto-fill, 324px);
     grid-gap: 60px;
   }
+
+  .basic-list--margin {
+    margin-bottom: 72px;
+  }
 }
 
 @media all and (min-width: $large-size) {
@@ -17,5 +21,9 @@
     grid-template-columns: repeat(auto-fill, 244px);
     column-gap: 80px;
     row-gap: 63px;
+  }
+
+  .basic-list--margin {
+    margin-bottom: 40px;
   }
 }

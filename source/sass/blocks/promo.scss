@@ -79,12 +79,14 @@
     grid-column: 2/3;
     max-width: 500px;
     text-align: left;
+    margin-bottom: 40px;
   }
 
   .promo__description {
     grid-row: 2/3;
     grid-column: 2/3;
     text-align: left;
+    margin-bottom: 50px;
   }
 
   .promo__image,
@@ -95,9 +97,10 @@
 
   .promo__image-wrapper {
     grid-row: 3/4;
-    grid-column: 1/-1;
+    grid-column: -1/1;
     justify-self: center;
     z-index: -1;
+    margin-top: -50px;
   }
 
   .promo__button {
@@ -110,26 +113,28 @@
 
 @media all and (min-width: $large-size) {
   .promo__container {
-    grid-template-columns: 91px 1129px;
-    grid-template-rows: 110px min-content min-content min-content;
+    grid-template-columns: 80px 1129px;
+    grid-template-rows: 75px min-content min-content min-content;
   }
 
   .promo__title {
     grid-row: 2/3;
     align-self: start;
-    margin: 0;
+    margin: 0 0 10px 0;
   }
 
   .promo__description {
     grid-row: 3/4;
     align-self: start;
-    margin: -50px 0 0 0;
+    margin-top: -65px;
   }
 
   .promo__image,
   .promo__image-wrapper {
     height: 499px;
     width: 552px;
+    margin-top: -5px;
+    margin-left: 20px;
   }
 
   .promo__image-wrapper {
@@ -143,7 +148,7 @@
   .promo__button {
     grid-row: 4/5;
     align-self: start;
-    margin-top: -80px;
+    margin-top: -91px;
   }
 
   .promo::before {
