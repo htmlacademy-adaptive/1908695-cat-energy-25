@@ -71,9 +71,10 @@
 }
 
 .service__button-icon {
-  transition-duration: 300ms;
+  width: 24px;
   fill: rgba(0, 0, 0, 1);
   stroke: rgba(0, 0, 0, 1);
+  transition-duration: 300ms;
 }
 
 .service__button {
@@ -100,6 +101,10 @@
   &:active .service__button-icon {
     fill: rgba(0, 0, 0, 0.3);
     stroke: rgba(0, 0, 0, 0.3);
+  }
+
+  &:focus {
+    outline-offset: 3px;
   }
 }
 

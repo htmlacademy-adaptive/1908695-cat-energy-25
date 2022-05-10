@@ -32,6 +32,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({collapseWhitespce: true}))
     .pipe(gulp.dest('build'));
 }
 
@@ -39,6 +40,7 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/script.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -88,6 +90,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/manifest.webmanifest'
   ], {
     base: 'source'
   })
@@ -125,9 +128,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/.scss', gulp.series(styles));
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/.html', gulp.series(html, reload));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
@@ -164,4 +167,3 @@ export default gulp.series(
     server,
     watcher
   ));
-
